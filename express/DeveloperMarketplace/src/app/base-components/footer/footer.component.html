@@ -15,13 +15,13 @@
       <br><br>
       <div class="row center">
           <div class="col m3 s6 btn_links">
-            <div (click)=mediaRedirect(linkedIn) class="linkedInIcon"><br>
+            <div (click)="mediaRedirect('linkedIn')" class="linkedInIcon"><br>
               <a [href]="socialMediaInfo['linkedIn']" class="icon-linkedIn" target="_blank"><br><br><br></a>
             </div>
-            <div (ng-click)="mediaRedirect(blog)" class="blogIcon"><br>
+            <div (click)="mediaRedirect('blog')" class="blogIcon"><br>
               <a [href]="socialMediaInfo['blog']" class="icon-blog" target="_blank"><br><br><br></a>
             </div>
-            <div (click)=mediaRedirect(email) class="emailIcon"><br>
+            <div (click)="mediaRedirect('email')" class="emailIcon"><br>
                <a [href]="socialMediaInfo['email']" class="icon-email" target="_blank"><br><br><br></a>
             </div>                    
           </div>

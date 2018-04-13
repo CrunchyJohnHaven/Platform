@@ -27,6 +27,11 @@ import { BodyLearningComponent } from './body/body-learning/body-learning.compon
 import { HeaderAdminComponent } from './headers/header-admin/header-admin.component';
 import { HeaderLearningComponent } from './headers/header-learning/header-learning.component';
 import { PlatformDashboardComponent } from './platform/platform-dashboard/platform-dashboard.component';
+import { WebDesignComponent } from './pages/web-design/web-design.component';
+import { CustomAppsComponent } from './pages/custom-apps/custom-apps.component';
+import { MarketingComponent } from './pages/marketing/marketing.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { BlogComponent } from './pages/blog/blog.component';
 // import { NgStyle } from '@angular/common';
 
 @NgModule({ //annotated decorator for root module AppModule
@@ -52,6 +57,11 @@ import { PlatformDashboardComponent } from './platform/platform-dashboard/platfo
     HeaderAdminComponent,
     HeaderLearningComponent,
     PlatformDashboardComponent,
+    WebDesignComponent,
+    CustomAppsComponent,
+    MarketingComponent,
+    ContactComponent,
+    BlogComponent,
     // NgStyle
   ],
   imports: [ //The other angular modules that export material we need in this module

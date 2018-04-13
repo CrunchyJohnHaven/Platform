@@ -37,13 +37,6 @@ export class WorkFormContentComponent implements OnInit {
   projects: Object[];
 
   constructor() {
-    this.projects = [
-      {
-        title: "Request A Quote",
-        summary: "Fullstack Web Development",
-        hide: true
-      },
-    ];
    }
   ngOnInit() {
   }
