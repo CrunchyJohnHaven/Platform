@@ -10,7 +10,7 @@ export class HeaderLearningComponent implements OnInit {
   subtitle: string; 
   constructor() {
     this.title = "Too Well Trained to Be Destroyed"
-    this.subtitle = "Coding is like anything else, the best are those with no quit in them."
+    this.subtitle = " <~> Coding is like anything else, the best go further, faster, for longer <~> "
   }
   ngOnInit() {
   }
