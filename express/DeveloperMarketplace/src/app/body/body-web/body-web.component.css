@@ -4,13 +4,17 @@
 }
 .left-content {
     width: 66%;
-    display: inline-block;
-    margin-right: 4vw;
-}
-.web-cont-title {
-    display: inline-block
+    display: flex;
 }
 .web-form {
     display: inline-block;
     width:30%
+}
+.web-col1 {
+width: 30vw;
+margin-right: 1vw;
+}
+.web-col2 {
+width: 30vw;
+margin-right: 1vw;
 }
