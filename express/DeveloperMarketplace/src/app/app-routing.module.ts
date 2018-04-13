@@ -9,6 +9,9 @@ import { MarketingComponent } from './pages/marketing/marketing.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { AdminComponent } from './admin/admin/admin.component';
+
+import { AuthGuard } from './services/auth-guard.service';
+
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'about-us', component: AboutUsComponent },
@@ -18,7 +21,11 @@ const routes: Routes = [
   { path: 'marketing', component: MarketingComponent},
   { path: 'contact', component: ContactComponent},
   { path: 'blog', component: BlogComponent},
-  { path: 'admin', component: AdminComponent},
+  {
+    path: 'admin',
+    canActivate: [AuthGuard],
+    component: AdminComponent
+  },
 
   { path: '',
   redirectTo: '/home',

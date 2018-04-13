@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './headers/header/header.component';
-import { HttpService } from './http.service';
+import { HttpService } from './services/http.service';
 import { HttpClientModule } from '@angular/common/http';
 import { AboutmeComponent } from './body/aboutme/aboutme.component';
 import { ResumeComponent } from './body/resume/resume.component';

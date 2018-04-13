@@ -28,25 +28,25 @@ export class AuthService {
   signInWithFacebook() {
     return this._firebaseAuth.auth.signInWithPopup(
       new firebase.auth.FacebookAuthProvider()
-    )
+    );
   }
 
   signInWithGoogle() {
     return this._firebaseAuth.auth.signInWithPopup(
       new firebase.auth.GoogleAuthProvider()
-    )
+    );
   }
 
   signInWithGithub() {
     return this._firebaseAuth.auth.signInWithPopup(
       new firebase.auth.GithubAuthProvider()
-    )
+    );
   }
 
   signInRegular(email, password) {
     const credential = firebase.auth.EmailAuthProvider.credential( email, password );
 
-    return this._firebaseAuth.auth.signInWithEmailAndPassword(email, password)
+    return this._firebaseAuth.auth.signInWithEmailAndPassword(email, password);
   }
 
 

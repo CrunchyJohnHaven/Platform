@@ -1,3 +1,4 @@
 {
-    "workbench.colorTheme": "Meteor"
+    "workbench.colorTheme": "Meteor",
+    "git.ignoreLimitWarning": true
 }
