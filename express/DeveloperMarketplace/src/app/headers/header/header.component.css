@@ -1,0 +1,50 @@
+.jumbotron {
+  background-attachment: fixed;
+  min-height: 1100px;
+  margin-bottom: 0px;
+  background-image: url('../../../assets/coverPhoto.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-shadow: black 0.3em 0.3em 0.3em;
+}
+
+.title {
+  color: #feff00;
+  font-style: normal;
+  font-family: normal;
+  font-size: 80px;
+  padding-top: 120px;
+  border-bottom: 1px solid #FFFFFF;
+  border-bottom-color: rgba(255,255,255,0.35);
+  display: inline-block;
+}
+.subtitle {
+  font-size: 28px;
+  color: #feff00;
+  font-style: italic;
+}
+
+.learn {
+  font-size: 21px;
+  color: black;
+  text-decoration: underline;
+  font-style: normal;
+  text-shadow: none;
+  width: fit-content;
+  background: rgb(211, 211, 211, 0.6);
+  margin-top: 20px;
+  border-radius: 100px;
+  padding: 7px;
+  padding-top: 7px;
+  padding-right: 7px;
+  padding-bottom: 1px;
+  padding-left: 7px;
+  position: absolute;
+  top:580;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin: auto;
+}
+

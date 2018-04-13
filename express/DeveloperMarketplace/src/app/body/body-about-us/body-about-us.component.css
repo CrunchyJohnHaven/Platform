@@ -1,0 +1,19 @@
+body {
+    min-height: 500px;
+    margin-left: 2%;
+    margin-top: 6%;
+}
+.about-cont-title {
+    padding-bottom: 40px;
+    margin-left: 20%;
+    color: black;
+    font-style: normal;
+    font-size: 40px;
+    padding-top: 0px;
+    border-bottom: 1px solid #FFFFFF;
+    border-bottom-color: rgba(255,255,255,0.35);
+    display: block;
+  }
+  .about-cont-class {
+    margin-left: 10%;
+}

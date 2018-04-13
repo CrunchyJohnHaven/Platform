@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <div class="footer-container">
+        Use of this Site is subject to express Terms of Use. By using this site
+        , you signify that you agree to be bound by these, 
+      <br>
+        which were last revised on the date shown in the footer of our legal page or in the relevant
+      <br>
+        document linked on our legal page.
+      <br><br>
+        Legal - Privacy Policy
+      <br><br>
+      <div class="row center">
+          <div class="col m3 s6 btn_links">
+            <div (click)=mediaRedirect(linkedIn) class="linkedInIcon"><br>
+              <a [href]="socialMediaInfo['linkedIn']" class="icon-linkedIn" target="_blank"><br><br><br></a>
+            </div>
+            <div (ng-click)="mediaRedirect(blog)" class="blogIcon"><br>
+              <a [href]="socialMediaInfo['blog']" class="icon-blog" target="_blank"><br><br><br></a>
+            </div>
+            <div (click)=mediaRedirect(email) class="emailIcon"><br>
+               <a [href]="socialMediaInfo['email']" class="icon-email" target="_blank"><br><br><br></a>
+            </div>                    
+          </div>
+        </div>
+    </div>
+  </body>
+</html>

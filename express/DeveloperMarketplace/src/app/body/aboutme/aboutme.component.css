@@ -1,0 +1,115 @@
+.main-header {
+    background-image: url('../../../assets/CPUBackground.jpg');
+    height: 500px;
+    background-size: cover;
+    background-size: auto contain;
+    position: top center;
+    background-attachment: fixed;
+    min-height: 300px;
+}
+.logo {
+    min-height: 490px; 
+    min-width: 300px;
+    background-image: url('../../../assets/profile2PNG.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: -15px;
+    top: 50%;
+  }
+  .about-me {
+    background-position: center;
+    display: inline;
+    margin-left: 80px;
+  }
+.content {
+    background-color: white;
+    background-size: cover;
+    display: inline-block;
+}
+.about-me {
+    display: inline-block;
+    height: 460px;
+    background-size: cover;
+    background-size: auto contain;
+    position: top center;
+    background-attachment: fixed;
+    min-height: 300px;
+    font-style: normal;
+    font-size: 15px;
+}
+.pic2 {
+    display: inline-block;
+    min-height: 300px;
+    min-width: 310px;
+    background-image: url('../../../assets/profilePNG.png');
+    background-repeat: no-repeat;
+    background-position: top left;
+    margin-left: 220px;
+    margin-top: 55px;
+    margin-bottom: -20px;
+    top: 50%;
+}
+.content {
+    margin-top: -15px;
+    position: top center;
+    margin-top: 0%;
+    height: 30%;
+    width: 50%;
+    background-color: white;
+    display: inline-block;
+}
+div p {
+    font-size: 15px;
+    font-style: normal;
+}
+article {
+    margin-top: 0px;
+}
+.githubIcon {
+    display: inline-block;
+    min-height: 32px;
+    min-width: 32px;
+    background-image: url('../../../assets/githubIcon.ico');
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.linkedInIcon {
+    display: inline-block;
+    min-height: 32px;
+    min-width: 32px;
+    background-image: url('../../../assets/linkedIn.ico');
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin-left: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.blogIcon {
+    display: inline-block;
+    min-height: 32px;
+    min-width: 32px;
+    background-image: url('../../../assets/blogIcon.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin-left: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.emailIcon {
+    display: inline-block;
+    min-height: 32px;
+    min-width: 32px;
+    background-image: url('../../../assets/emailIcon.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin-left: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.icon-text {
+    margin-top: 32px;
+}
+

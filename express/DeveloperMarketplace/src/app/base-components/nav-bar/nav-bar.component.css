@@ -1,0 +1,31 @@
+.navBardemoBasicUsage md-content .ext-content {
+    padding: 50px;
+    margin: 20px;
+    background-color: #FFF2E0; }
+
+.container {
+    background-color: black;
+    color: white;
+    margin-left: inherit;
+    padding-left: 5rem;
+}
+body {
+    background-color: black;
+    min-height: 120px;
+    display: inline-flex;
+    width: 100%
+}
+.nav-bar-col {
+    padding-right: 40px;
+}
+.row {
+    padding-top: 50px;
+    display: inline-flex;
+}
+.nav-icon-container {
+    display: inline-block;
+    padding-left: 0px;
+    background-color: blue;
+    height: inherit;
+    width: 11rem;
+}

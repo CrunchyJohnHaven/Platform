@@ -1,0 +1,150 @@
+.jumbotron {
+    background-attachment: fixed;
+    min-height: 390px;
+    margin-bottom: 0px;
+    background-image: url('../../../assets/CPUBackground.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-shadow: black 0.3em 0.3em 0.3em;
+  }
+  
+  .title {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: #feff00;
+    font-style: italic;
+    font-family: cursive;
+    font-size: 50px;
+    padding-top: 120px;
+    border-bottom: 1px solid #FFFFFF;
+    border-bottom-color: rgba(255,255,255,0.35);
+    display: inline-block;
+  }
+  .logo {
+    min-height: 300px; 
+    min-width: 300px;
+    background-image: url('../../../assets/300Logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: -15px;
+    top: 50%;
+  }
+
+
+.section {
+    background-color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.collection {
+    margin-top: 0.5rem;
+    margin-right: 0px;
+    margin-bottom: 1rem;
+    margin-left: 0px;
+    border-top-color: rgb(224,224,224);
+    border-top-style: solid;
+    border-right-width: 1px;
+    border-style: solid;
+    border-color:rgb(224,224,224);
+    border-width: 1px;
+    margin-top: 0.5rem;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 1rem;
+    
+}
+.collection .collection-item {
+    line-height: 1.5rem;
+    border-bottom: 1px solid #e0e0e0;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(224,224,224);
+}
+ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+.row {
+    margin-top: 0px;
+}
+.row .col {
+    float: left;
+    box-sizing: border-box;
+    padding-top: 0px;
+    padding-right: 0.75rem;
+    padding-bottom: 0px; 
+    padding-left: 0.75rem;
+    min-height: 1px; 
+}
+.row .col.m4 {
+    width: 33.33333%;
+    margin-left: auto;
+    left: 30px;
+    right: 0rem;
+}
+
+
+.resume-container {
+    background-color: white;
+    min-height: 350px;
+    background-size: cover;
+
+}
+
+
+.container .row {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+}
+h5 { 
+    color: white;
+    font-size: 1.64rem;
+    line-height: 110%;
+    margin-top: 0.82rem;
+    margin-right: 0px;
+    margin-bottom: 0.656rem;
+}
+.collection.with-header .collection-header {
+    border: 1px solid #9b6629;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: black;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+.collection.with-header .collection-item {
+    line-height: 1.5rem;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+.gold.accent-4 {
+    background-color: #9b6629; 
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.container .row {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+}
+p {
+    line-height: 2rem;
+}
+
+.center {
+    text-align: center;
+}
+html {
+    font-size: 15px;
+    font-family: "Roboto", sans-sarif;
+    font-weight: normal;
+    color: black;
+}

@@ -1,0 +1,24 @@
+.jumbotron {
+    background-attachment: fixed;
+    min-height: 550px;
+    margin-bottom: 0px;
+    background-image: url('../../../assets/coverPhoto.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-shadow: black 0.3em 0.3em 0.3em;
+  }
+  .title {
+    color: #feff00;
+    font-style: normal;
+    font-family: normal;
+    font-size: 80px;
+    padding-top: 120px;
+    border-bottom: 1px solid #FFFFFF;
+    border-bottom-color: rgba(255,255,255,0.35);
+    display: inline-block;
+  }
+  .subtitle {
+    font-size: 28px;
+    color: #feff00;
+    font-style: italic;
+  }
