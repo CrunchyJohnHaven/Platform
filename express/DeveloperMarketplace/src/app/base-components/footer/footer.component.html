@@ -15,6 +15,9 @@
       <br><br>
       <div class="row center">
           <div class="col m3 s6 btn_links">
+            <div class="hiddenForm" [hidden]=hideForm>
+              <app-footer-form></app-footer-form>    
+            </div>  
             <div (click)="mediaRedirect('linkedIn')" class="linkedInIcon"><br>
               <a [href]="socialMediaInfo['linkedIn']" class="icon-linkedIn" target="_blank"><br><br><br></a>
             </div>
@@ -22,12 +25,10 @@
               <a [href]="socialMediaInfo['blog']" class="icon-blog" target="_blank"><br><br><br></a>
             </div>
             <div (click)="mediaRedirect('email')" class="emailIcon"><br>
-               <a [href]="socialMediaInfo['email']" class="icon-email" target="_blank"><br><br><br></a>
-            </div>                    
+              <a [href]="socialMediaInfo['email']" class="icon-email" target="_blank"><br><br><br></a>
+            </div>             
           </div>
         </div>
     </div>
-    <!-- <div class="hiddenForm" [hidden]="project.hide">
-    </div> -->
   </body>
 </html>

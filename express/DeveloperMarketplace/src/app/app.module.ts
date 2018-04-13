@@ -42,6 +42,8 @@ import { BodyContactComponent } from './body/body-contact/body-contact.component
 import { BodyBlogComponent } from './body/body-blog/body-blog.component';
 import { HeaderMarketingComponent } from './headers/header-marketing/header-marketing.component';
 import { HeaderBlogComponent } from './headers/header-blog/header-blog.component';
+import { FooterFormComponent } from './body/forms/footer-form/footer-form.component';
+import { FormWebComponent } from './body/forms/form-web/form-web.component';
 // import { NgStyle } from '@angular/common';
 
 @NgModule({ //annotated decorator for root module AppModule
@@ -82,6 +84,8 @@ import { HeaderBlogComponent } from './headers/header-blog/header-blog.component
     BodyBlogComponent,
     HeaderMarketingComponent,
     HeaderBlogComponent,
+    FooterFormComponent,
+    FormWebComponent,
     // NgStyle
   ],
   imports: [ //The other angular modules that export material we need in this module
