@@ -42,7 +42,6 @@ import { BodyContactComponent } from './body/body-contact/body-contact.component
 import { BodyBlogComponent } from './body/body-blog/body-blog.component';
 import { HeaderMarketingComponent } from './headers/header-marketing/header-marketing.component';
 import { HeaderBlogComponent } from './headers/header-blog/header-blog.component';
-<<<<<<< HEAD
 
 import { environment } from '../environments/environment';
 import { AngularFireModule } from 'angularfire2';
@@ -53,10 +52,6 @@ import * as firebase from 'firebase/app';
 import { AuthService } from './services/auth.service';
 import { AuthGuard } from './services/auth-guard.service';
 
-=======
-import { FooterFormComponent } from './body/forms/footer-form/footer-form.component';
-import { FormWebComponent } from './body/forms/form-web/form-web.component';
->>>>>>> 0f34e55e0b6a29ee24f9047e02d804ada992a0e4
 // import { NgStyle } from '@angular/common';
 
 @NgModule({ // annotated decorator for root module AppModule
