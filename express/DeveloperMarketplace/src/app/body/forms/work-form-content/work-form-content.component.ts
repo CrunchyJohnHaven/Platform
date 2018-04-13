@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-work-form-content',
@@ -8,8 +8,10 @@ import { Component, OnInit } from '@angular/core';
   <div class="form"
     *ngFor="let project of projects">
     <a class="btn btn-primary" (click)="toggle(project)">Request a quote from a Sapper</a>
+    <br><br>
     <div class="card card-block" [hidden]="project.hide">
       <h4 class="card-title" [hidden]="project.hide">{{project.title}}</h4>
+      <br><br>
       <form>
         <div class="form-group">
           <label for="firstName">First Name</label>
@@ -33,10 +35,17 @@ import { Component, OnInit } from '@angular/core';
   </div>
     `
 })
-export class WorkFormContentComponent implements OnInit {
+export class WorkFormContentComponent {
   projects: Object[];
 
   constructor() {
+    this.projects = [
+      {
+        title: "Request A Quote",
+        summary: "Fullstack Web Development",
+        hide: true
+      },
+    ];
    }
   ngOnInit() {
   }

@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header-learning.component.css']
 })
 export class HeaderLearningComponent implements OnInit {
-
-  constructor() { }
-
+  title: string;
+  subtitle: string; 
+  constructor() {
+    this.title = "Too Well Trained to Be Destroyed"
+    this.subtitle = "Coding is like anything else, the best are those with no quit in them."
+  }
   ngOnInit() {
   }
-
 }
