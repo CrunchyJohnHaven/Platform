@@ -21,7 +21,7 @@ import { BodyAboutUsComponent } from './body/body-about-us/body-about-us.compone
 import { HeaderAboutComponent } from './headers/header-about/header-about.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { LearningPlatformComponent } from './pages/learning-platform/learning-platform.component';
-import { AdminComponent } from './pages/admin/admin.component';
+import { AdminComponent } from './admin/admin/admin.component';
 import { BodyAdminComponent } from './body/body-admin/body-admin.component';
 import { BodyLearningComponent } from './body/body-learning/body-learning.component';
 import { HeaderAdminComponent } from './headers/header-admin/header-admin.component';
@@ -32,6 +32,16 @@ import { CustomAppsComponent } from './pages/custom-apps/custom-apps.component';
 import { MarketingComponent } from './pages/marketing/marketing.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { BlogComponent } from './pages/blog/blog.component';
+import { HeaderWebComponent } from './headers/header-web/header-web.component';
+import { HeaderCustomAppsComponent } from './headers/header-custom-apps/header-custom-apps.component';
+import { HeaderContactComponent } from './headers/header-contact/header-contact.component';
+import { BodyWebComponent } from './body/body-web/body-web.component';
+import { BodyCustomAppsComponent } from './body/body-custom-apps/body-custom-apps.component';
+import { BodyMarketingComponent } from './body/body-marketing/body-marketing.component';
+import { BodyContactComponent } from './body/body-contact/body-contact.component';
+import { BodyBlogComponent } from './body/body-blog/body-blog.component';
+import { HeaderMarketingComponent } from './headers/header-marketing/header-marketing.component';
+import { HeaderBlogComponent } from './headers/header-blog/header-blog.component';
 // import { NgStyle } from '@angular/common';
 
 @NgModule({ //annotated decorator for root module AppModule
@@ -62,6 +72,16 @@ import { BlogComponent } from './pages/blog/blog.component';
     MarketingComponent,
     ContactComponent,
     BlogComponent,
+    HeaderWebComponent,
+    HeaderCustomAppsComponent,
+    HeaderContactComponent,
+    BodyWebComponent,
+    BodyCustomAppsComponent,
+    BodyMarketingComponent,
+    BodyContactComponent,
+    BodyBlogComponent,
+    HeaderMarketingComponent,
+    HeaderBlogComponent,
     // NgStyle
   ],
   imports: [ //The other angular modules that export material we need in this module
