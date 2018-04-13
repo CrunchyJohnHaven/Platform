@@ -42,13 +42,13 @@ import { BodyContactComponent } from './body/body-contact/body-contact.component
 import { BodyBlogComponent } from './body/body-blog/body-blog.component';
 import { HeaderMarketingComponent } from './headers/header-marketing/header-marketing.component';
 import { HeaderBlogComponent } from './headers/header-blog/header-blog.component';
-
 import { environment } from '../environments/environment';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import * as firebase from 'firebase/app';
-
+import { FooterFormComponent } from './body/forms/footer-form/footer-form.component';
+import { FormWebComponent } from './body/forms/form-web/form-web.component';
 import { AuthService } from './services/auth.service';
 import { AuthGuard } from './services/auth-guard.service';
 
