@@ -4,13 +4,13 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './headers/header/header.component';
-import { HttpService } from './services/http.service';
+import {HttpService} from './http.service';
 import { HttpClientModule } from '@angular/common/http';
 import { AboutmeComponent } from './body/aboutme/aboutme.component';
 import { ResumeComponent } from './body/resume/resume.component';
 import { FormComponent } from './body/./forms/form/form.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatCheckboxModule } from '@angular/material';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 import { NavBarComponent } from './base-components/nav-bar/nav-bar.component';
 import { PortfolioComponent } from './body/portfolio-container/portfolio/portfolio.component';
 import { PortfolioContainerComponent } from './body/portfolio-container/portfolio-container.component';
@@ -42,25 +42,12 @@ import { BodyContactComponent } from './body/body-contact/body-contact.component
 import { BodyBlogComponent } from './body/body-blog/body-blog.component';
 import { HeaderMarketingComponent } from './headers/header-marketing/header-marketing.component';
 import { HeaderBlogComponent } from './headers/header-blog/header-blog.component';
-<<<<<<< HEAD
-
-import { environment } from '../environments/environment';
-import { AngularFireModule } from 'angularfire2';
-import { AngularFireDatabaseModule } from 'angularfire2/database';
-import { AngularFireAuthModule } from 'angularfire2/auth';
-import * as firebase from 'firebase/app';
-
-import { AuthService } from './services/auth.service';
-import { AuthGuard } from './services/auth-guard.service';
-
-=======
 import { FooterFormComponent } from './body/forms/footer-form/footer-form.component';
 import { FormWebComponent } from './body/forms/form-web/form-web.component';
->>>>>>> 0f34e55e0b6a29ee24f9047e02d804ada992a0e4
 // import { NgStyle } from '@angular/common';
 
-@NgModule({ // annotated decorator for root module AppModule
-  declarations: [ // List of components or directives belonging to this module
+@NgModule({ //annotated decorator for root module AppModule
+  declarations: [ //List of components or directives belonging to this module 
     AppComponent,
     HeaderComponent,
     AboutmeComponent,
@@ -101,8 +88,8 @@ import { FormWebComponent } from './body/forms/form-web/form-web.component';
     FormWebComponent,
     // NgStyle
   ],
-  imports: [ // The other angular modules that export material we need in this module
-    BrowserModule, // All bits and pieces to run our app in the browser
+  imports: [ //The other angular modules that export material we need in this module
+    BrowserModule, //All bits and pieces to run our app in the browser
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
@@ -113,6 +100,6 @@ import { FormWebComponent } from './body/forms/form-web/form-web.component';
 
   ],
   providers: [HttpService],
-  bootstrap: [AppComponent] // ID's the root module that angular should bootstrap when it starts the application
+  bootstrap: [AppComponent] //ID's the root module that angular should bootstrap when it starts the application 
 })
 export class AppModule { }

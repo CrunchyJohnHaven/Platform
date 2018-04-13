@@ -1,8 +1,8 @@
 import { Component, NgModule, OnInit } from '@angular/core';
-import { HttpService} from './../../.././http.service';
+import { HttpService} from './../../.././services/http.service';
 
 @Component({
-  selector: 'app-portfolio', 
+  selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
   styleUrls: ['./portfolio.component.css'],
   template: `
@@ -23,7 +23,7 @@ export class PortfolioComponent implements OnInit {
   ngOnInit() {
     this.projectInfo = this.httpService.getProjectInfo();
     console.log("this.projectInfo: ", this.projectInfo[0].backgroundImage);
-  
+
   }
   getUrl(title) {
     switch(title) {
@@ -48,9 +48,9 @@ export class PortfolioComponent implements OnInit {
 }
 
 
-// background={{project.backgroundImage}} 
+// background={{project.backgroundImage}}
 
-// Turnery operator: 
+// Turnery operator:
 // <div class="card card-block"
     //  *ngFor="let project of projectInfo" [ngStyle]="{'background-color': project.title === 'TheAmericanElement.com' ? 'green' : 'red'}">
 

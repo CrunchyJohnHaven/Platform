@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpService } from '../../http.service';
+import { HttpService } from '../../services/http.service';
 
 @Component({
   selector: 'app-nav-bar',
@@ -8,14 +8,14 @@ import { HttpService } from '../../http.service';
 })
 export class NavBarComponent implements OnInit {
   row1: string;
-  row2: string; 
+  row2: string;
   row3: string;
   row4: string;
-  row5: string; 
+  row5: string;
   row6: string;
   row7: string;
   row8: string;
-  constructor() { 
+  constructor() {
     this.row1 = "HOME";
     this.row2 = "LEARNING PLATFORM";
     this.row3 = "WEB DESIGN";

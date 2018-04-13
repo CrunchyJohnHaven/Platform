@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpService } from '../../http.service';
+import { HttpService } from '../../services/http.service';
 
 @Component({
   selector: 'app-resume',
@@ -9,7 +9,7 @@ import { HttpService } from '../../http.service';
 export class ResumeComponent implements OnInit {
 
   constructor(private _httpService: HttpService) { }
-  
+
 
   ngOnInit() {
   }
