@@ -8,15 +8,16 @@
     color: white;
     margin-left: inherit;
     padding-left: 5rem;
+    width: 100%;
 }
 body {
     background-color: black;
     min-height: 120px;
     display: inline-flex;
-    width: 100%
+    min-width: 100%
 }
 .nav-bar-col {
-    padding-right: 40px;
+    padding-right: 3vw;
 }
 .row {
     padding-top: 50px;

@@ -8,10 +8,12 @@ import { HttpService} from './../.././services/http.service';
 })
 export class FooterComponent implements OnInit {
   private socialMediaInfo;
+  hideForm: boolean;
   constructor(private httpService: HttpService) {
   }
 
   ngOnInit() {
+    this.hideForm = true;
     this.socialMediaInfo = this.httpService.getSocialMediaInfo();
   }
   mediaRedirect(title) {
@@ -22,7 +24,8 @@ export class FooterComponent implements OnInit {
       case 'blog' :
         return location.href = 'https://theamericanelement.com';
       case 'email' :
-        return location.href = 'johnhavenbradley@sappercoding.com';
+        window.location.hash = 'your-page-element';
+        return this.hideForm = !this.hideForm;  
       }
     }
   }

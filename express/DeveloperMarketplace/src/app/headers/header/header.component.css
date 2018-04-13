@@ -37,7 +37,7 @@
   font-style: normal;
   text-shadow: none;
   width: fit-content;
-  background: rgb(211, 211, 211, 0.6);
+  background: transparent;
   margin-top: 20px;
   border-radius: 100px;
   padding: 7px;
@@ -46,11 +46,15 @@
   padding-bottom: 1px;
   padding-left: 7px;
   position: absolute;
-  top:580;
+  top:400;
   bottom: 0;
   left: 0;
   right: 0;
 
   margin: auto;
 }
-
+a {
+  color: #feff00;
+  background: transparent;
+  text-decoration: underline;
+}

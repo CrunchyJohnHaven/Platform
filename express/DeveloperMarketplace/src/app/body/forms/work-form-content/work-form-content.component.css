@@ -11,3 +11,12 @@
 .form-group {
     text-align: left;
 }
+.btn {
+    text-shadow: none;
+    border-width: 0.1vw;
+    border-color: white;
+}
+a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
+    color: white;
+    text-decoration: none;
+}

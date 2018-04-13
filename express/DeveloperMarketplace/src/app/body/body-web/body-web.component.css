@@ -1,0 +1,16 @@
+.web-cont-class {
+    padding-top: 2vw;
+    display: flex;
+}
+.left-content {
+    width: 66%;
+    display: inline-block;
+    margin-right: 4vw;
+}
+.web-cont-title {
+    display: inline-block
+}
+.web-form {
+    display: inline-block;
+    width:30%
+}

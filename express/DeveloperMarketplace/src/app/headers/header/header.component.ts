@@ -13,7 +13,7 @@ learn: string;
   constructor() {
     this.title = "Sapper Coding"
     this.subtitle = "Web, mobile, and viral marketing, with military precision"
-    this.learn = "Do you have what it takes to be a Sapper?"
+    this.learn = "<~> Do you have what it takes to be a Sapper <~>"
   }
 
   ngOnInit() {
