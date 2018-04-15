@@ -1,60 +1,275 @@
+
+
+.header_block {
+  background: #1f2022;
+  display: block;
+  margin: 56px 0px 0px;
+  width: 100%;
+}
+
+.splash_image_block {
+  background: url(https://cutecdn.codingdojo.com/new_images/home/splash_image.png) no-repeat !important;
+  -webkit-background-size: 100% 764px !important;
+  -moz-background-size: 100% 764px !important;
+  -o-background-size: 100% 764px !important;
+  background-size: 100% 764px !important;
+  background-position: 0 0;
+  height: 670px;
+  overflow: hidden;
+  position: relative;
+  z-index: 99;
+}
+.information_block {
+  left: 140px;
+  position: absolute;
+  text-align: left;
+  top: 42%;
+}
+.vertical_centered {
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  text-align: center;
+}
+#video_parent {
+  height: inherit;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+#video_mask {
+  width: 100%;
+  height: 100%;
+  background: #272737;
+  position: absolute;
+}
+img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+#splash_link {
+  padding: 0px 0px 0px 40px !important;
+  position: relative;
+  z-index: 600;
+}
+header {
+margin-top: 0px;
+}
+#future_links {
+    display: inline-block;
+    vertical-align: top;
+    height: 1125.8px;
+    width: 1125.8px;
+    margin-left: -173.832px;
+    margin-top: -85.0784px;
+    top: 0px;
+}
+
+/* RADIAL */
+.radial {
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#radial_frame {
+  background-image: url(https://assets.codingdojo.com/images/home/radial_frame2.png) !important;
+  /* animation: animate_frame 35s infinite, fade_in 1s;
+  -webkit-animation: animate_frame 35s infinite, fade_in 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  transform: rotate(-40deg); */
+}
+
+#radial_ring_code {
+background-image: url(https://cdn2.codingdojo.com/images/home/radial_ringcode.png) !important;
+/* animation: animate_ring_code 35s infinite, fade_in 1s;
+-webkit-animation: animate_ring_code 35s infinite, fade_in 1s;
+-webkit-animation-timing-function: linear;
+animation-timing-function: linear;
+transform: rotate(40deg); */
+}
+#future_links {
+  display: inline-block;
+  vertical-align: top;
+  height: 1125.8px;
+  width: 1125.8px;
+  margin-left: -173.832px;
+  margin-top: -85.0784px;
+  top: 0px;
+  overflow: visible;
+  flex: none;
+  text-align: right;
+}
+
+#link_parent {
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: center;
+  animation: fade_in 3s;
+  -webkit-box-pack: justify;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+  -webkit-animation: fade_in 3s;
+  z-index: 9999;
+}
+#link_parent a {
+  content: '';
+  background-image: url(https://cutecdn.codingdojo.com/images/home/your_future_2.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: inline-block !important;
+  height: 235px;
+  width: 235px;
+  cursor: pointer;
+}
+/*  */
+
+.title_block {
+  display: inline-block;
+  z-index: 9999;
+  position: absolute;
+  right: 180px;
+  top: 140px;
+  width: 500px;
+}
+h2 {
+  -webkit-animation: fade_in 5s, drive_right 3s;
+  animation: fade_in 5s, drive_right 3s;
+  font: 64px/70px ProximaNova-Extrabld, tahoma, verdana, arial, sans-serif;
+  margin: 0px;
+  width: 904px;
+  color:#fffd54;
+}
+h3 {
+  color: #fffd54;
+}
+#home_video_placeholder {
+  -webkit-filter: blur(0px) grayscale(1);
+  filter: blur(0px) grayscale(1);
+  opacity: 0.25;
+}
+
+.header_block .splash_image_block #video_parent video {
+    display: inline-block;
+    height: auto;
+    width: 100%;
+    -webkit-filter: blur(0px) grayscale(1);
+    filter: blur(0px) grayscale(1);
+    opacity: 0.25;
+    z-index: 400;
+}
+.header_block .splash_image_block {
+  background: url(https://cutecdn.codingdojo.com/new_images/home/splash_image.png) no-repeat !important;
+  -webkit-background-size: 100% 764px !important;
+  -moz-background-size: 100% 764px !important;
+  -o-background-size: 100% 764px !important;
+  background-size: 100% 764px !important;
+  background-position: 0 0;
+  height: 670px;
+  overflow: hidden;
+}
+
+.information_block {
+  left: 140px;
+  position: absolute;
+  text-align: left;
+  top: 42%;
+}
+
+.blue_line {
+  position: absolute;
+  right: 0;
+  height: 1276px;
+  width: 1276px;
+  background-repeat: no-repeat;
+  background-image: url(https://cutecdn.codingdojo.com/images/home/top_line_2.png);
+}
+.header_block .splash_image_block #splash_link header #future_links .radial {
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+.header_block .splash_image_block .information_block {
+  left: 140px;
+  position: absolute;
+  text-align: left;
+  top: 42%;
+}
+.header_block .splash_image_block #video_mask {
+  width: 100%;
+  height: 100%;
+  background: #272737;
+  position: absolute;
+}
+audio, canvas, progress, video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+.cta_btn_block {
+  -webkit-animation: none;
+  animation: none;
+  display: block;
+  margin: 30px 0px 0px;
+}
+.cta_blue_btn {
+  background-color: #06aae2;
+  color: #fff !important;
+  display: inline-block;
+  font: bold 16px/20px ProximaNova-Light, tahoma, verdana, arial, sans-serif !important;
+  padding: 8px 0px;
+  text-decoration: none !important;
+  text-align: center;
+  vertical-align: middle;
+  width: 200px;
+}
+/* .cta_blue_btn_light {
+  color: #06aae2 !important;
+  background-color: transparent;
+  border: 1px solid #06aae2;
+  padding: 8px 0px;
+  text-decoration: none !important;
+  text-align: center;
+  vertical-align: middle;
+  width: 200px;
+} */
+.cta_blue_btn_light {
+  background-color: transparent;
+  display: inline-block;
+  font: bold 16px/20px ProximaNova-Light, tahoma, verdana, arial, sans-serif !important;
+  padding: 8px 0px;
+  text-decoration: none !important;
+  text-align: center;
+  vertical-align: middle;
+  width: 200px;
+}
 .jumbotron {
   background-attachment: fixed;
-  min-height: 20vw;
+  min-height: 390px;
   margin-bottom: 0px;
-  background:
-  linear-gradient(
-    rgba(0,0,0,.5), 
-    rgba(0,0,0,.5)
-  ),
-  url('../../../assets/coverPhoto.png');
-  
+  background-image: url('../../../assets/CPUBackground.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   text-shadow: black 0.3em 0.3em 0.3em;
 }
-
 .title {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   color: #feff00;
-  font-style: normal;
-  font-family: normal;
-  font-size: 80px;
   padding-top: 120px;
   border-bottom: 1px solid #FFFFFF;
   border-bottom-color: rgba(255,255,255,0.35);
   display: inline-block;
 }
-.subtitle {
-  font-size: 28px;
-  color: #feff00;
-  font-style: italic;
-}
-
-.learn {
-  font-size: 21px;
-  color: black;
-  text-decoration: underline;
-  font-style: normal;
-  text-shadow: none;
-  width: fit-content;
-  background: transparent;
-  margin-top: 20px;
-  border-radius: 100px;
-  padding: 7px;
-  padding-top: 7px;
-  padding-right: 7px;
-  padding-bottom: 1px;
-  padding-left: 7px;
-  position: absolute;
-  top:400;
-  bottom: 0;
-  left: 0;
-  right: 0;
-
-  margin: auto;
-}
-a {
-  color: #feff00;
-  background: transparent;
-  text-decoration: underline;
+.center {
+  text-align: center;
 }

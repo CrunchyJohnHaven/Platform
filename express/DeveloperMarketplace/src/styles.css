@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~font-awesome/css/font-awesome.css";
+
+/* BUTTONS */
 .cta_btns {
     display: inline-block;
     margin: 0px 0px 0px 20px;
@@ -44,6 +46,9 @@
     padding-bottom: 8px;
     padding-left: 0px;
 }
+/* END BUTTONS */
+
+/* MAIN ELEMENT STYLINGS */
 html {
     font-size: 10px;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -56,8 +61,21 @@ body {
     background-color: #fff;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
+div {
+    display: block;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
 p, li {
     font: 18px/22px ProximaNova-Light,tahoma,verdana,arial,sans-serif;
+}
+p {
+    margin: 0 0 10px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    margin-left: 0px;
 }
 a {
     color: #fff;
@@ -72,6 +90,19 @@ ul, menu, dir {
     -webkit-margin-end: 0px;
     -webkit-padding-start: 40px;
 }
+ol, ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+h2 {
+    display: block;
+    font-size: 1.5em;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+  }
 h3 {
     font-style: normal;
     font-variant-ligatures: normal;
@@ -84,16 +115,7 @@ h3 {
     line-height: 50px;
     font-family: ProximaNova-Bold, tahoma, verdana, arial, sans-serif;
 }
-p, li {
-    font: 18px/22px ProximaNova-Light,tahoma,verdana,arial,sans-serif;
-}
-p {
-    margin: 0 0 10px;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 10px;
-    margin-left: 0px;
-}
+
 h6 {
     font: 20px/25px ProximaNova-Light,tahoma,verdana,arial,sans-serif;
 }
@@ -106,4 +128,8 @@ h6 {
 }
 :after, :before {
     box-sizing: border-box;
+}
+.list_unstyled {
+    padding-left: 0;
+    list-style: none;
 }

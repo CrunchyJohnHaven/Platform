@@ -46,12 +46,3 @@ export class PortfolioComponent implements OnInit {
     }
   }
 }
-
-
-// background={{project.backgroundImage}}
-
-// Turnery operator:
-// <div class="card card-block"
-    //  *ngFor="let project of projectInfo" [ngStyle]="{'background-color': project.title === 'TheAmericanElement.com' ? 'green' : 'red'}">
-
-    // onclick="location.href='http://www.theamericanelement.com'"
