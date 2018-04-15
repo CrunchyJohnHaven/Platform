@@ -53,6 +53,9 @@ import { AuthService } from './services/auth.service';
 import { AuthGuard } from './services/auth-guard.service';
 import { MapComponent } from './body/map/map.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+// // changed prev line to following 2 lines; hopefully fix error
+// import { HttpClientModule } from '@angular/common/http';
+// import { HttpModule } from '@angular/http';
 import { AgmCoreModule } from '@agm/core';
 // import { NgStyle } from '@angular/common';
 
@@ -101,6 +104,9 @@ import { AgmCoreModule } from '@agm/core';
   imports: [ // The other angular modules that export material we need in this module
     BrowserModule, // All bits and pieces to run our app in the browser
     AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAuthModule,
+    AngularFireDatabaseModule,
     FormsModule,
     BrowserAnimationsModule,
     HttpClientModule,
@@ -110,7 +116,11 @@ import { AgmCoreModule } from '@agm/core';
     // NgStyle
 
   ],
-  providers: [HttpService],
+  providers: [
+    AuthGuard,
+    AuthService,
+    HttpService
+  ], // added AuthGuard & AuthService here; hoping to fix injector error
   bootstrap: [AppComponent] // ID's the root module that angular should bootstrap when it starts the application
 })
 export class AppModule { }
