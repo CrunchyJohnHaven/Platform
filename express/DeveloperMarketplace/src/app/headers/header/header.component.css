@@ -1,5 +1,4 @@
 
-
 .header_block {
   background: #1f2022;
   display: block;
@@ -8,7 +7,6 @@
 }
 
 .splash_image_block {
-  background: url(https://cutecdn.codingdojo.com/new_images/home/splash_image.png) no-repeat !important;
   -webkit-background-size: 100% 764px !important;
   -moz-background-size: 100% 764px !important;
   -o-background-size: 100% 764px !important;
@@ -43,6 +41,7 @@
   width: 100%;
   height: 100%;
   background: #272737;
+  background: transparent;
   position: absolute;
 }
 img {
@@ -68,7 +67,6 @@ margin-top: 0px;
     top: 0px;
 }
 
-/* RADIAL */
 .radial {
   position: absolute;
   height: inherit;
@@ -77,21 +75,21 @@ margin-top: 0px;
   background-size: contain;
 }
 #radial_frame {
+  background-size: cover;
   background-image: url(https://assets.codingdojo.com/images/home/radial_frame2.png) !important;
-  /* animation: animate_frame 35s infinite, fade_in 1s;
-  -webkit-animation: animate_frame 35s infinite, fade_in 1s;
+  animation: animate_frame 35s infinite, fade_in 1s;
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
-  transform: rotate(-40deg); */
+  transform: rotate(-40deg);
 }
 
 #radial_ring_code {
 background-image: url(https://cdn2.codingdojo.com/images/home/radial_ringcode.png) !important;
-/* animation: animate_ring_code 35s infinite, fade_in 1s;
+animation: animate_ring_code 35s infinite, fade_in 1s;
 -webkit-animation: animate_ring_code 35s infinite, fade_in 1s;
 -webkit-animation-timing-function: linear;
 animation-timing-function: linear;
-transform: rotate(40deg); */
+transform: rotate(40deg);
 }
 #future_links {
   display: inline-block;
@@ -129,7 +127,6 @@ transform: rotate(40deg); */
   width: 235px;
   cursor: pointer;
 }
-/*  */
 
 .title_block {
   display: inline-block;
@@ -154,6 +151,7 @@ h3 {
   -webkit-filter: blur(0px) grayscale(1);
   filter: blur(0px) grayscale(1);
   opacity: 0.25;
+  background-image: url(../../../assets/GearFlagB.jpg)
 }
 
 video {
@@ -165,17 +163,6 @@ video {
     opacity: 0.25;
     z-index: 400;
 }
-.splash_image_block {
-  background: url(https://cutecdn.codingdojo.com/new_images/home/splash_image.png) no-repeat !important;
-  -webkit-background-size: 100% 764px !important;
-  -moz-background-size: 100% 764px !important;
-  -o-background-size: 100% 764px !important;
-  background-size: 100% 764px !important;
-  background-position: 0 0;
-  height: 670px;
-  overflow: hidden;
-}
-
 .information_block {
   left: 140px;
   position: absolute;
@@ -205,12 +192,6 @@ video {
   position: absolute;
   text-align: left;
   top: 42%;
-}
-#video_mask {
-  width: 100%;
-  height: 100%;
-  background: #272737;
-  position: absolute;
 }
 
 .cta_btn_block {
@@ -259,4 +240,25 @@ video {
 }
 .center {
   text-align: center;
+}
+
+
+
+/* HOVER BOX */
+.box {
+  margin: 50px auto;
+  background: #5FCF80;
+  width: 150px;
+  height: 150px;
+}
+.box:hover {
+  transform: rotate(360deg);
+  background: #9351A6;
+  border-radius: 50%;
+}
+.rotate {
+  transition: all 0.5s ease-in-out;
+}
+.rotate:hover {
+  transition: all 1s ease-in-out;
 }

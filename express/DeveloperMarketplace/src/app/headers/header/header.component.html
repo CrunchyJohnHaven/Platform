@@ -1,41 +1,16 @@
 <div class="header_block">
-    <div id="made-in-ny"></div>
-    <script src="https://player.vimeo.com/api/player.js"></script>
-    <script src="angular-fancybox-plus.js"></script>
-    <script>
-        var options = {
-            id: 59777392,
-            width: 640,
-            loop: true
-        };
-    
-        var player = new Vimeo.Player('video_mask', options);
-    
-        player.setVolume(0);
-    
-        player.on('play', function() {
-            console.log('played the video!');
-        });
-    </script>
   <div class="splash_image_block">
-
     <div class="information_block vertical_centered"></div>
     <div id="video_parent">
-      <div id="video_mask"></div>
-          <img src="https://cdn2.codingdojo.com/new_images/home/splash_image.png" alt="sapper-life" id="home_video_placeholder" style="display:none;">
-          <video id="splash_main_video" loop="loop" class="sophis-video" sophis-video-control="true">
-            <source src="https://player.vimeo.com/video/264854162" title="A day as a Sapper">
-          </video>
-        
-      
-
-        <div class="splash_image_block">
-          <div class="information_block vertical_centered"></div>
-        </div>
-      </div>
+        <div id="video_mask"></div>
+        <img src="../../../assets/GearFlagB.jpg" alt="coding-dojo-bootcamp-student-life" id="home_video_placeholder" style="display: none;">
+        <div class="sophis-video-control" draggable="true"></div><div class="sophis-video-control" draggable="true"></div>
+        <video id="splash_main_video" loop="loop" class="sophis-video" sophis-video-control="true"> 
+          <source src="../../../assets/fightVideo.mp4" title="A day on campus"> 
+        </video>
+    </div>
       <div id="splash_link"> 
           <header>
-
             <div id="future_links"> 
               <div id="radial_ring_code" class="radial"></div>
               <div id="radial_frame" class="radial"></div>
@@ -47,6 +22,7 @@
               </div>
               <div id="link_parent" class="radial">
                 <div class="invisible"></div>
+                  <!-- <a class="fancybox/iframe" href="../../../assets/fightVideo.mp4"></a> -->
                   <a class="fancybox/iframe" href="https://player.vimeo.com/video/264854162?api=1&player_id=vimeo_video&autoplay=1"></a>
                   <div class="invisible"></div>
               </div>
