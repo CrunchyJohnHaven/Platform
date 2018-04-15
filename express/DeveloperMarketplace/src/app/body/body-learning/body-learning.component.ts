@@ -12,9 +12,9 @@ export class BodyLearningComponent implements OnInit {
     password: ''
   };
 
+
   constructor( private authService: AuthService ) { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {  }
 
 }
