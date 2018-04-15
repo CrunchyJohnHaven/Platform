@@ -42,10 +42,7 @@ import { BodyContactComponent } from './body/body-contact/body-contact.component
 import { BodyBlogComponent } from './body/body-blog/body-blog.component';
 import { HeaderMarketingComponent } from './headers/header-marketing/header-marketing.component';
 import { HeaderBlogComponent } from './headers/header-blog/header-blog.component';
-<<<<<<< HEAD
 
-=======
->>>>>>> cd48251a1e70f576e5b84c5bef7cb597b21773ec
 import { environment } from '../environments/environment';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';

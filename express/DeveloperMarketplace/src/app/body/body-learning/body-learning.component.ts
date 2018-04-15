@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { AuthService } from '../../services/auth.service';
 @Component({
   selector: 'app-body-learning',
   templateUrl: './body-learning.component.html',
@@ -7,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BodyLearningComponent implements OnInit {
 
-  constructor() { }
+  user = {
+    email: '',
+    password: ''
+  };
+
+  constructor( private authService: AuthService ) { }
 
   ngOnInit() {
   }

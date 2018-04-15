@@ -1,4 +1,5 @@
 {
-    "workbench.colorTheme": "Meteor",
-    "git.ignoreLimitWarning": true
+    "workbench.colorTheme": "azure",
+    "git.ignoreLimitWarning": true,
+    "editor.tabSize": 2
 }
