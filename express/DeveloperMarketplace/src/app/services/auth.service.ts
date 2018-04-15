@@ -20,17 +20,6 @@ export class AuthService {
         (user) => {
           if (user) {
             this.userDetails = user;
-            console.log(`
-            >>  >>  >>>>>>>
-            >>  >>  >>>>>>>
-            >>  >>  >>>>>>>
-            >>  >>  >>>>>>>
-            >>  >>  >>>>>>>
-            >>  >>  >>>>>>>
-            >>  >>  >>>>>>>
-           `);
-            console.log(this.userDetails.displayName);
-
           } else {
             this.userDetails = null;
             console.log('user == null; no user signed in');
