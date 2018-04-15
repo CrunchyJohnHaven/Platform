@@ -85,9 +85,27 @@
                       </div>
                     <!-- </li> -->
                   </li>
+                <li class='home'>
+                    <div class="cta_btns">
+                        <p *ngIf='authService.isLoggedIn()'>
+                          Signed in as {{ authService.getCurrentUserDisplayName() }}
+                          <input (click)='doUserLogout()' class="campus_tour_button cta_blue_btn" value='Sign Out'>
+                        </p>
+                        <a *ngIf='!authService.isLoggedIn()' routerLink="/learning" class="campus_tour_button cta_blue_btn">Sign In</a>
+                    </div>
+                </li>
+
+                <li class='home'>
+                    <div class="cta_btns">
+                      <a routerLink="/admin" class="contact_us_button cta_blue_btn_light">Admin login</a>
+                    </div>
+                </li>
+
+
+
+
             </ul>
             <div class="cta_btns">
-                <a routerLink="/learning" class="campus_tour_button cta_blue_btn">Apply</a>
                 <a routerLink="/contact" class="contact_us_button cta_blue_btn_light">Contact Us</a>
             </div>
       </div>
@@ -124,7 +142,7 @@
             <a routerLink="/about-us">About Us</a>
         </div>
       </div>
-    </div>  --> 
+    </div>  -->
   </body>
 </html>
 
