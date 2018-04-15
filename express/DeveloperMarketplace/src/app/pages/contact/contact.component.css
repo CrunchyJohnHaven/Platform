@@ -1,0 +1,13 @@
+.contact-cont-class {
+    padding-top: 2vw;
+    display: flex;
+}
+.left-content {
+    width: 45%;
+    display: inline-block;
+    text-align: center;
+}
+.web-form {
+    display: inline-block;
+    width:40%
+}

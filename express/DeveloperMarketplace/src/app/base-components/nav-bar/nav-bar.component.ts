@@ -24,9 +24,10 @@ export class NavBarComponent implements OnInit {
     this.row6 = "CONTACT";
     this.row7 = "BLOG"
     this.row8 = "ABOUT US";
+
+
   }
 
   ngOnInit() {
   }
-
 }
