@@ -1,11 +1,166 @@
+/* Pitch Element */
+.page_data_carrier {
+    position: relative;
+    z-index: 1000;
+}
+.page_data_carrier #local_job_demand .upper_container {
+    position: relative;
+    background: #272634;
+    text-align: center;
+    padding: 80px;
+    padding-top: 48px;
+    color: #fff;
+}
+.container {
+    width: 100%;
+    padding: 0px;
+    margin: 0px auto;
+}
+.page_data_carrier #local_job_demand .upper_container h3 {
+    margin-bottom: 21px;
+}
+.page_data_carrier #local_job_demand .upper_container .container h6 {
+    width: 70%;
+    display: inline-block;
+}
+.page_data_carrier #local_job_demand .upper_container h6 {
+    margin-bottom: 50px;
+}
+.page_data_carrier #local_job_demand .upper_container #stack_list {
+    text-align: center;
+    position: absolute;
+    bottom: -23px;
+    width: 100%;
+    left: 0;
+    z-index: 500;
+}
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+page_data_carrier #local_job_demand .upper_container #stack_list .stack_item > div > span.icon_block .stack_icon {
+    display: block;
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+    background-position: 0px -4px;
+    background-image: url(https://cutecdn.codingdojo.com/new_design_image/global/sprite_images/stacks_iconography.png);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    position: relative;
+}
+div {
+    display: block;
+}
+ol, ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.page_data_carrier #local_job_demand .upper_container #stack_list .stack_item {
+    margin-right: 34px;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+}
+.page_data_carrier #local_job_demand .upper_container #stack_list .stack_item.python > div > span.icon_block .stack_icon {
+    background-position: 0px 1px;
+}
+.page_data_carrier #local_job_demand .upper_container #stack_list .stack_item.python>div>span {
+    color: #fff;
+}
+.page_data_carrier #local_job_demand .upper_container #stack_list .stack_item>div>span.icon_block {
+    height: 100px;
+    opacity: 1;
+    width: 100px;
+}
+.stack_item>div>span {
+    display: block;
+    font: 20px/24px ProximaNova-Extrabld, tahoma, verdana, arial, sans-serif;
+    margin: 10px auto;
+    opacity: .5;
+}
+.stack_icon {
+    display: block;
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+    background-position: 0px -4px;
+    background-image: url('../../../assets/python100.png');
+    background-size: cover;
+    background-size: auto contain;
+    background-repeat: no-repeat;
+    position: top center;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    position: relative;
+}
+.page_data_carrier #local_job_demand .upper_container #stack_list .stack_item > div > span.icon_block .stack_icon:before {
+    position: absolute;
+    top: 0px;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    left: 1px;
+    opacity: .5;
+    border-radius: 100%;
+}
+.python {
+    background-image: url('../../../assets/python100.png');
+}
+.mean {
+    background-image: url('../../../assets/mean100.png');
+}
+.django {
+    background-image: url('../../../assets/django100.png');
+}
+.swift {
+    background-image: url('../../../assets/swift100.png');
+}
+.angular {
+    background-image: url('../../../assets/swift100.png');
+}
+
+/* Lower Container */
+.lower_container {
+background-color: #F4F4F4;
+    padding: 80px;
+    position: relative;
+    transition: all 0.2s ease-out;
+}
+.stack_tab_container {
+    width: 100%;
+    text-align: center;
+    height: 100%;
+}
+.content:first-child {
+    width: 250px;
+    text-align: left;
+}
+.content {
+    display: inline-block;
+    vertical-align: top;
+}
 body {
     min-height: 500px;
     margin-left: 2%;
     margin-top: 6%;
 }
+.page_data_carrier #local_job_demand .lower_container .stack_tab_container .content h4 {
+    font: 26px/28px ProximaNova-Bold, tahoma, verdana, arial, sans-serif;
+    margin-bottom: 24px;
+}
 .port-cont-title {
     padding-bottom: 40px;
     margin-left: 20%;
+    margin-top: 10vw;
     color: black;
     font-style: normal;
     font-size: 40px;
@@ -17,3 +172,5 @@ body {
   .port-cont-class {
     margin-left: 10%;
 }
+
+
