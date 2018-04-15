@@ -1,0 +1,9 @@
+.map-container {
+    background-color: blue;
+    width: 24vw;
+    height: 20vw;
+    margin-left: 24%
+}
+agm-map {
+    height: 380px;
+  }

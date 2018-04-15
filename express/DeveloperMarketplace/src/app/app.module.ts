@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './headers/header/header.component';
 import { HttpService } from './services/http.service';
-import { HttpClientModule } from '@angular/common/http';
 import { AboutmeComponent } from './body/aboutme/aboutme.component';
 import { ResumeComponent } from './body/resume/resume.component';
 import { FormComponent } from './body/./forms/form/form.component';
@@ -52,7 +51,9 @@ import { FooterFormComponent } from './body/forms/footer-form/footer-form.compon
 import { FormWebComponent } from './body/forms/form-web/form-web.component';
 import { AuthService } from './services/auth.service';
 import { AuthGuard } from './services/auth-guard.service';
-
+import { MapComponent } from './body/map/map.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { AgmCoreModule } from '@agm/core';
 // import { NgStyle } from '@angular/common';
 
 @NgModule({ // annotated decorator for root module AppModule
@@ -95,16 +96,17 @@ import { AuthGuard } from './services/auth-guard.service';
     HeaderBlogComponent,
     FooterFormComponent,
     FormWebComponent,
-    // NgStyle
+    MapComponent
   ],
   imports: [ // The other angular modules that export material we need in this module
     BrowserModule, // All bits and pieces to run our app in the browser
     AppRoutingModule,
-    HttpClientModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatButtonModule,
-    MatCheckboxModule,
+    HttpClientModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDrON3E42miBTlNmnccp9Aaln7SSm_YC1I'
+    }),
     // NgStyle
 
   ],

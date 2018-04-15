@@ -7,8 +7,6 @@ import { Component } from '@angular/core';
   template: `
   <div class="form"
     *ngFor="let project of projects">
-    <a class="btn btn-primary" (click)="toggle(project)">Request a quote from a Sapper</a>
-    <br><br>
     <div class="card card-block" [hidden]="project.hide">
       <h4 class="card-title" [hidden]="project.hide">{{project.title}}</h4>
       <br><br>
@@ -32,6 +30,8 @@ import { Component } from '@angular/core';
         <button type="submit" class="btn btn-success">Submit</button>
       </form>
     </div>
+    <a class="btn btn-primary" (click)="toggle(project)">Request a quote from a Sapper</a>
+    <br><br>
   </div>
     `
 })
