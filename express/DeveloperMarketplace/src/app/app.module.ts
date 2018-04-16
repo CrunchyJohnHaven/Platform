@@ -57,6 +57,12 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 // import { HttpClientModule } from '@angular/common/http';
 // import { HttpModule } from '@angular/http';
 import { AgmCoreModule } from '@agm/core';
+import { IntroLearningComponent } from './pages/learning-platform/intro-learning/intro-learning.component';
+import { NoQuitCalloutComponent } from './pages/learning-platform/no-quit-callout/no-quit-callout.component';
+import { InfoRequestFormComponent } from './pages/learning-platform/info-request-form/info-request-form.component';
+import { LearnOnlineMoreInfoComponent } from './pages/learning-platform/learn-online-more-info/learn-online-more-info.component';
+import { AboutUsDifferentComponent } from './pages/learning-platform/about-us-different/about-us-different.component';
+import { MissionLoginComponent } from './pages/learning-platform/mission-login/mission-login.component';
 // import { NgStyle } from '@angular/common';
 
 @NgModule({ // annotated decorator for root module AppModule
@@ -99,7 +105,13 @@ import { AgmCoreModule } from '@agm/core';
     HeaderBlogComponent,
     FooterFormComponent,
     FormWebComponent,
-    MapComponent
+    MapComponent,
+    IntroLearningComponent,
+    NoQuitCalloutComponent,
+    InfoRequestFormComponent,
+    LearnOnlineMoreInfoComponent,
+    AboutUsDifferentComponent,
+    MissionLoginComponent
   ],
   imports: [ // The other angular modules that export material we need in this module
     BrowserModule, // All bits and pieces to run our app in the browser
