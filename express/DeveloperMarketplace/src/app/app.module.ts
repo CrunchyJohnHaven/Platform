@@ -63,6 +63,8 @@ import { InfoRequestFormComponent } from './pages/learning-platform/info-request
 import { LearnOnlineMoreInfoComponent } from './pages/learning-platform/learn-online-more-info/learn-online-more-info.component';
 import { AboutUsDifferentComponent } from './pages/learning-platform/about-us-different/about-us-different.component';
 import { MissionLoginComponent } from './pages/learning-platform/mission-login/mission-login.component';
+import { FormFreeQuoteComponent } from './body/forms/form-free-quote/form-free-quote.component';
+import { MobilePortfolioComponent } from './body/mobile-portfolio/mobile-portfolio.component';
 // import { NgStyle } from '@angular/common';
 
 @NgModule({ // annotated decorator for root module AppModule
@@ -111,7 +113,9 @@ import { MissionLoginComponent } from './pages/learning-platform/mission-login/m
     InfoRequestFormComponent,
     LearnOnlineMoreInfoComponent,
     AboutUsDifferentComponent,
-    MissionLoginComponent
+    MissionLoginComponent,
+    FormFreeQuoteComponent,
+    MobilePortfolioComponent
   ],
   imports: [ // The other angular modules that export material we need in this module
     BrowserModule, // All bits and pieces to run our app in the browser
