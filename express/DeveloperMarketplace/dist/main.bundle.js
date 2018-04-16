@@ -264,6 +264,12 @@ var http_1 = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
 // import { HttpClientModule } from '@angular/common/http';
 // import { HttpModule } from '@angular/http';
 var core_2 = __webpack_require__("./node_modules/@agm/core/index.js");
+var intro_learning_component_1 = __webpack_require__("./src/app/pages/learning-platform/intro-learning/intro-learning.component.ts");
+var no_quit_callout_component_1 = __webpack_require__("./src/app/pages/learning-platform/no-quit-callout/no-quit-callout.component.ts");
+var info_request_form_component_1 = __webpack_require__("./src/app/pages/learning-platform/info-request-form/info-request-form.component.ts");
+var learn_online_more_info_component_1 = __webpack_require__("./src/app/pages/learning-platform/learn-online-more-info/learn-online-more-info.component.ts");
+var about_us_different_component_1 = __webpack_require__("./src/app/pages/learning-platform/about-us-different/about-us-different.component.ts");
+var mission_login_component_1 = __webpack_require__("./src/app/pages/learning-platform/mission-login/mission-login.component.ts");
 // import { NgStyle } from '@angular/common';
 var AppModule = /** @class */ (function () {
     function AppModule() {
@@ -309,7 +315,13 @@ var AppModule = /** @class */ (function () {
                 header_blog_component_1.HeaderBlogComponent,
                 footer_form_component_1.FooterFormComponent,
                 form_web_component_1.FormWebComponent,
-                map_component_1.MapComponent
+                map_component_1.MapComponent,
+                intro_learning_component_1.IntroLearningComponent,
+                no_quit_callout_component_1.NoQuitCalloutComponent,
+                info_request_form_component_1.InfoRequestFormComponent,
+                learn_online_more_info_component_1.LearnOnlineMoreInfoComponent,
+                about_us_different_component_1.AboutUsDifferentComponent,
+                mission_login_component_1.MissionLoginComponent
             ],
             imports: [
                 platform_browser_1.BrowserModule,
@@ -415,7 +427,7 @@ module.exports = "a {\n    color: #fff;\n    text-decoration: none;\n}\n\n.heade
 /***/ "./src/app/base-components/nav-bar/nav-bar.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE-edge\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1 minimum-scale=1.0\">\n    <meta name=\"description\" content=\"Interested in becoming a self-sustaining web and mobile app developer with a team of military Veterans dedicated to ensuring your long-term success? Build a portfolio of real-world projects with a team that understands where you've been, and how to get where you are going next.\">\n    <meta name=\"author\" content>\n    <link rel=\"sapper icon\" href=\"./../../../assets/favicon.ico\" type=\"image/x-icon\">\n    <title>Sapper Coding - Web and Mobile App Development and Education By and for Veterans</title>\n  </head>\n  <body class=\"home\">\n    <div class=\"header_block home\">\n      <div class=\"main_nav_block\">\n        <!-- <a href=\"/\" class=\"cd_logo uses_sprite vertical_centered\">\n          <img src=\"./../../../assets/\" alt=\"logo\">\n        </a> -->\n        <ul class=\"nav_option_block\">\n          <li class=\"home\">\n            <li class=\"programs_menu open\">\n              <a href=\"javascript:void(0)\">\n              <a routerLink=\"/home\">Home</a>\n              </a>\n              <div class=\"dropdown_menu\">\n                <ul>\n                  <li>\n                    <a routerLink=\"/learning\">Learning</a>\n                  </li>\n                </ul>\n              </div>\n            <!-- </li> -->\n          </li>\n          <li class=\"home\">\n              <li class=\"programs_menu open\">\n                <a href=\"javascript:void(0)\">\n                  <a routerLink=\"/learning\">Learning Platform</a>\n                </a>\n                <div class=\"dropdown_menu\">\n                  <ul>\n                    <li>\n                      <a routerLink=\"/learning\">Learning</a>\n                    </li>\n                  </ul>\n                </div>\n              <!-- </li> -->\n            </li>\n            <li class=\"home\">\n                <li class=\"programs_menu open\">\n                  <a href=\"javascript:void(0)\">\n                      <a routerLink=\"/web\">Web Design</a>\n                  </a>\n                  <div class=\"dropdown_menu\">\n                    <ul>\n                      <li>\n                          <a routerLink=\"/apps\">Custom Apps</a>\n                      </li>\n                    </ul>\n                  </div>\n                <!-- </li> -->\n              </li>\n              <li class=\"home\">\n                  <li class=\"programs_menu open\">\n                    <a href=\"javascript:void(0)\">\n                        <a routerLink=\"/marketing\">Web Marketing</a>\n                    </a>\n                    <div class=\"dropdown_menu\">\n                      <ul>\n                        <li>\n                            <a routerLink=\"/contact\">Contact</a>\n                        </li>\n                      </ul>\n                    </div>\n                  <!-- </li> -->\n                </li>\n                <li class=\"home\">\n                    <li class=\"programs_menu open\">\n                      <a href=\"javascript:void(0)\">\n                          <a routerLink=\"/about-us\">About Us</a>\n                      </a>\n                      <div class=\"dropdown_menu\">\n                        <ul>\n                          <li>\n                            <a routerLink=\"/learning\">Learning</a>\n                          </li>\n                        </ul>\n                      </div>\n                    <!-- </li> -->\n                  </li>\n                <li class='home'>\n                    <div class=\"cta_btns\">\n                        <p *ngIf='authService.isLoggedIn()'>\n                          Signed in as {{ authService.getCurrentUserDisplayName() }}\n                          <input (click)='doUserLogout()' class=\"campus_tour_button cta_blue_btn\" value='Sign Out'>\n                        </p>\n                        <a *ngIf='!authService.isLoggedIn()' routerLink=\"/learning\" class=\"campus_tour_button cta_blue_btn\">Sign In</a>\n                    </div>\n                </li>\n\n                <li class='home'>\n                    <div class=\"cta_btns\">\n                      <a routerLink=\"/admin\" class=\"contact_us_button cta_blue_btn_light\">Admin login</a>\n                    </div>\n                </li>\n\n\n\n\n            </ul>\n            <div class=\"cta_btns\">\n                <a routerLink=\"/contact\" class=\"contact_us_button cta_blue_btn_light\">Contact Us</a>\n            </div>\n      </div>\n    </div>\n    <!-- <div class=\"container\">\n      <div class=\"row\">\n        <div class=\"nav-bar-col\">\n          <a routerLink=\"/home\">Home</a>\n        </div>\n        <div class=\"nav-bar-col\">\n          <a routerLink=\"/learning\">Learning Platform</a>\n        </div>\n        <div class=\"nav-bar-col\">\n          <a routerLink=\"/web\">Web Design</a>\n        </div>\n        <div class=\"nav-bar-col\">\n          <a routerLink=\"/apps\">Custom Apps</a>\n        </div>\n        <div class=\"nav-bar-col\">\n          <a routerLink=\"/marketing\">Web Marketing</a>\n        </div>\n        <div class=\"nav-bar-col\">\n          <a routerLink=\"/contact\">Contact</a>\n        </div>\n        <!-- <div class=\"nav-bar-col\">\n          <a routerLink=\"/blog\">Blog</a>\n        </div> -->\n        <!-- <div class=\"nav-bar-col\">\n          <a routerLink=\"/admin\">Admin</a>\n        </div>\n\n\n        <div class=\"nav-bar-col\">\n            <a routerLink=\"/about-us\">About Us</a>\n        </div>\n      </div>\n    </div>  -->\n  </body>\n</html>\n\n\n"
+module.exports = "<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE-edge\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1 minimum-scale=1.0\">\n    <meta name=\"description\" content=\"Interested in becoming a self-sustaining web and mobile app developer with a team of military Veterans dedicated to ensuring your long-term success? Build a portfolio of real-world projects with a team that understands where you've been, and how to get where you are going next.\">\n    <meta name=\"author\" content>\n    <link rel=\"sapper icon\" href=\"./../../../assets/favicon.ico\" type=\"image/x-icon\">\n    <title>Sapper Coding - Web and Mobile App Development and Education By and for Veterans</title>\n  </head>\n  <body class=\"home\">\n    <div class=\"header_block home\">\n      <div class=\"main_nav_block\">\n        <!-- <a href=\"/\" class=\"cd_logo uses_sprite vertical_centered\">\n          <img src=\"./../../../assets/\" alt=\"logo\">\n        </a> -->\n        <ul class=\"nav_option_block\">\n          <li class=\"home\">\n            <li class=\"programs_menu open\">\n              <a href=\"javascript:void(0)\">\n              <a routerLink=\"/home\">Home</a>\n              </a>\n              <div class=\"dropdown_menu\">\n                <ul>\n                  <li>\n                    <a routerLink=\"/learning\">Learning</a>\n                  </li>\n                </ul>\n              </div>\n            <!-- </li> -->\n          </li>\n          <li class=\"home\">\n              <li class=\"programs_menu open\">\n                <a href=\"javascript:void(0)\">\n                  <a routerLink=\"/learning\">Learning Platform</a>\n                </a>\n                <div class=\"dropdown_menu\">\n                  <ul>\n                    <li>\n                      <a routerLink=\"/learning\">Learning</a>\n                    </li>\n                  </ul>\n                </div>\n              <!-- </li> -->\n            </li>\n            <li class=\"home\">\n                <li class=\"programs_menu open\">\n                  <a href=\"javascript:void(0)\">\n                      <a routerLink=\"/web\">Web Design</a>\n                  </a>\n                  <div class=\"dropdown_menu\">\n                    <ul>\n                      <li>\n                          <a routerLink=\"/apps\">Custom Apps</a>\n                      </li>\n                    </ul>\n                  </div>\n                <!-- </li> -->\n              </li>\n              <li class=\"home\">\n                  <li class=\"programs_menu open\">\n                    <a href=\"javascript:void(0)\">\n                        <a routerLink=\"/marketing\">Web Marketing</a>\n                    </a>\n                    <div class=\"dropdown_menu\">\n                      <ul>\n                        <li>\n                            <a routerLink=\"/contact\">Contact</a>\n                        </li>\n                      </ul>\n                    </div>\n                  <!-- </li> -->\n                </li>\n                <li class=\"home\">\n                    <li class=\"programs_menu open\">\n                      <a href=\"javascript:void(0)\">\n                          <a routerLink=\"/about-us\">About Us</a>\n                      </a>\n                      <div class=\"dropdown_menu\">\n                        <ul>\n                          <li>\n                            <a routerLink=\"/learning\">Learning</a>\n                          </li>\n                        </ul>\n                      </div>\n                    <!-- </li> -->\n                  </li>\n\n            </ul>\n            <div class=\"cta_btns\">\n                <a routerLink=\"/contact\" class=\"contact_us_button cta_blue_btn_light\">Contact Us</a>\n            </div>\n      </div>\n    </div>\n    <!-- <div class=\"container\">\n      <div class=\"row\">\n        <div class=\"nav-bar-col\">\n          <a routerLink=\"/home\">Home</a>\n        </div>\n        <div class=\"nav-bar-col\">\n          <a routerLink=\"/learning\">Learning Platform</a>\n        </div>\n        <div class=\"nav-bar-col\">\n          <a routerLink=\"/web\">Web Design</a>\n        </div>\n        <div class=\"nav-bar-col\">\n          <a routerLink=\"/apps\">Custom Apps</a>\n        </div>\n        <div class=\"nav-bar-col\">\n          <a routerLink=\"/marketing\">Web Marketing</a>\n        </div>\n        <div class=\"nav-bar-col\">\n          <a routerLink=\"/contact\">Contact</a>\n        </div>\n        <!-- <div class=\"nav-bar-col\">\n          <a routerLink=\"/blog\">Blog</a>\n        </div> -->\n        <!-- <div class=\"nav-bar-col\">\n          <a routerLink=\"/admin\">Admin</a>\n        </div>\n\n\n        <div class=\"nav-bar-col\">\n            <a routerLink=\"/about-us\">About Us</a>\n        </div>\n      </div>\n    </div>  -->\n  </body>\n</html>\n\n\n"
 
 /***/ }),
 
@@ -1809,7 +1821,7 @@ module.exports = "\n.header_block {\n  background: #1f2022;\n  display: block;\n
 /***/ "./src/app/headers/header/header.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"header_block\">\n  <div class=\"splash_image_block\">\n    <div class=\"information_block vertical_centered\"></div>\n    <div id=\"video_parent\">\n        <div id=\"video_mask\"></div>\n        <img src=\"../../../assets/GearFlagB.jpg\" alt=\"coding-dojo-bootcamp-student-life\" id=\"home_video_placeholder\" style=\"display: none;\">\n        <div class=\"sophis-video-control\" draggable=\"true\"></div><div class=\"sophis-video-control\" draggable=\"true\"></div>\n        <video id=\"splash_main_video\" loop=\"loop\" class=\"sophis-video\" sophis-video-control=\"true\"> \n          <source src=\"../../../assets/fightVideo.mp4\" title=\"A day on campus\"> \n        </video>\n    </div>\n      <div id=\"splash_link\"> \n          <header>\n            <div id=\"future_links\"> \n              <div id=\"radial_ring_code\" class=\"radial\"></div>\n              <div id=\"radial_frame\" class=\"radial\"></div>\n              <div id=\"radial_ring_1\" class=\"radial\"></div>\n              <div id=\"radial_ring_2\" class=\"radial\"></div>\n              <div id=\"radial_ring_3\" class=\"radial\"></div>\n              <div class=\"blue_line_parent\">\n                <div class=\"blue_line\"></div>\n              </div>\n              <div id=\"link_parent\" class=\"radial\">\n                <div class=\"invisible\"></div>\n                  <!-- <a class=\"fancybox/iframe\" href=\"../../../assets/fightVideo.mp4\"></a> -->\n                  <a class=\"fancybox/iframe\" href=\"https://player.vimeo.com/video/264854162?api=1&player_id=vimeo_video&autoplay=1\"></a>\n                  <div class=\"invisible\"></div>\n              </div>\n            </div>\n\n            <div class=\"title_block\" id=\"desktop_version\">\n              <h2>SAPPER CODING</h2>\n              <h3>Web and mobile app development by those who serve, to serve your business</h3>\n              <div class=\"cta_btn_block\">\n                  <a routerLink=\"/contact\" class=\"cta_blue_btn\">Hire Sappers</a>\n                  <a routerLink=\"/learning\" class=\"cta_blue_btn_light\">Become a Sapper</a>\n              </div>\n            </div>\n\n            </header>\n        </div>\n      </div>\n    </div>\n    <div class=\"jumbotron\">\n        <div class=\"text-center project-referal\">\n          <div class=\"title text-center\">\n            <h2>Elite Veteran Developer Teams</h2> \n              <h3>For Your Next Project</h3>\n          </div>\n      </div>\n    </div>\n"
+module.exports = "<div class=\"header_block\">\n  <div class=\"splash_image_block\">\n    <div class=\"information_block vertical_centered\"></div>\n    <div id=\"video_parent\">\n        <div id=\"video_mask\"></div>\n        <img src=\"../../../assets/GearFlagB.jpg\" alt=\"coding-dojo-bootcamp-student-life\" id=\"home_video_placeholder\" style=\"display: none;\">\n        <div class=\"sophis-video-control\" draggable=\"true\"></div><div class=\"sophis-video-control\" draggable=\"true\"></div>\n        <video id=\"splash_main_video\" loop=\"loop\" class=\"sophis-video\" sophis-video-control=\"true\">\n          <source src=\"../../../assets/fightVideo.mp4\" title=\"A day on campus\">\n        </video>\n    </div>\n      <div id=\"splash_link\">\n          <header>\n            <div id=\"future_links\">\n              <div id=\"radial_ring_code\" class=\"radial\"></div>\n              <div id=\"radial_frame\" class=\"radial\"></div>\n              <div id=\"radial_ring_1\" class=\"radial\"></div>\n              <div id=\"radial_ring_2\" class=\"radial\"></div>\n              <div id=\"radial_ring_3\" class=\"radial\"></div>\n              <div class=\"blue_line_parent\">\n                <div class=\"blue_line\"></div>\n              </div>\n              <div id=\"link_parent\" class=\"radial\">\n                <div class=\"invisible\"></div>\n                  <!-- <a class=\"fancybox/iframe\" href=\"../../../assets/fightVideo.mp4\"></a> -->\n                  <a class=\"fancybox/iframe\" href=\"https://player.vimeo.com/video/264854162?api=1&player_id=vimeo_video&autoplay=1\"></a>\n                  <div class=\"invisible\"></div>\n              </div>\n            </div>\n\n            <div class=\"title_block\">\n              <h2>SAPPER CODING</h2>\n              <h3>Web and mobile app development by those who serve, to serve your business</h3>\n              <div class=\"cta_btn_block\">\n                  <a routerLink=\"/contact\" class=\"cta_blue_btn\">Hire Sappers</a>\n                  <a routerLink=\"/learning\" class=\"cta_blue_btn_light\">Become a Sapper</a>\n              </div>\n            </div>\n\n            </header>\n        </div>\n      </div>\n    </div>\n    <div class=\"jumbotron\">\n        <div class=\"text-center project-referal\">\n          <div class=\"title text-center\">\n            <h2>Elite Veteran Developer Teams</h2>\n              <h3>For Your Next Project</h3>\n          </div>\n      </div>\n    </div>\n"
 
 /***/ }),
 
@@ -2103,6 +2115,206 @@ exports.HomeComponent = HomeComponent;
 
 /***/ }),
 
+/***/ "./src/app/pages/learning-platform/about-us-different/about-us-different.component.css":
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/pages/learning-platform/about-us-different/about-us-different.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  about-us-different works!\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/pages/learning-platform/about-us-different/about-us-different.component.ts":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var AboutUsDifferentComponent = /** @class */ (function () {
+    function AboutUsDifferentComponent() {
+    }
+    AboutUsDifferentComponent.prototype.ngOnInit = function () {
+    };
+    AboutUsDifferentComponent = __decorate([
+        core_1.Component({
+            selector: 'app-about-us-different',
+            template: __webpack_require__("./src/app/pages/learning-platform/about-us-different/about-us-different.component.html"),
+            styles: [__webpack_require__("./src/app/pages/learning-platform/about-us-different/about-us-different.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], AboutUsDifferentComponent);
+    return AboutUsDifferentComponent;
+}());
+exports.AboutUsDifferentComponent = AboutUsDifferentComponent;
+
+
+/***/ }),
+
+/***/ "./src/app/pages/learning-platform/info-request-form/info-request-form.component.css":
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/pages/learning-platform/info-request-form/info-request-form.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  info-request-form works!\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/pages/learning-platform/info-request-form/info-request-form.component.ts":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var InfoRequestFormComponent = /** @class */ (function () {
+    function InfoRequestFormComponent() {
+    }
+    InfoRequestFormComponent.prototype.ngOnInit = function () {
+    };
+    InfoRequestFormComponent = __decorate([
+        core_1.Component({
+            selector: 'app-info-request-form',
+            template: __webpack_require__("./src/app/pages/learning-platform/info-request-form/info-request-form.component.html"),
+            styles: [__webpack_require__("./src/app/pages/learning-platform/info-request-form/info-request-form.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], InfoRequestFormComponent);
+    return InfoRequestFormComponent;
+}());
+exports.InfoRequestFormComponent = InfoRequestFormComponent;
+
+
+/***/ }),
+
+/***/ "./src/app/pages/learning-platform/intro-learning/intro-learning.component.css":
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/pages/learning-platform/intro-learning/intro-learning.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  intro-learning works!\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/pages/learning-platform/intro-learning/intro-learning.component.ts":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var IntroLearningComponent = /** @class */ (function () {
+    function IntroLearningComponent() {
+    }
+    IntroLearningComponent.prototype.ngOnInit = function () {
+    };
+    IntroLearningComponent = __decorate([
+        core_1.Component({
+            selector: 'app-intro-learning',
+            template: __webpack_require__("./src/app/pages/learning-platform/intro-learning/intro-learning.component.html"),
+            styles: [__webpack_require__("./src/app/pages/learning-platform/intro-learning/intro-learning.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], IntroLearningComponent);
+    return IntroLearningComponent;
+}());
+exports.IntroLearningComponent = IntroLearningComponent;
+
+
+/***/ }),
+
+/***/ "./src/app/pages/learning-platform/learn-online-more-info/learn-online-more-info.component.css":
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/pages/learning-platform/learn-online-more-info/learn-online-more-info.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  learn-online-more-info works!\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/pages/learning-platform/learn-online-more-info/learn-online-more-info.component.ts":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var LearnOnlineMoreInfoComponent = /** @class */ (function () {
+    function LearnOnlineMoreInfoComponent() {
+    }
+    LearnOnlineMoreInfoComponent.prototype.ngOnInit = function () {
+    };
+    LearnOnlineMoreInfoComponent = __decorate([
+        core_1.Component({
+            selector: 'app-learn-online-more-info',
+            template: __webpack_require__("./src/app/pages/learning-platform/learn-online-more-info/learn-online-more-info.component.html"),
+            styles: [__webpack_require__("./src/app/pages/learning-platform/learn-online-more-info/learn-online-more-info.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], LearnOnlineMoreInfoComponent);
+    return LearnOnlineMoreInfoComponent;
+}());
+exports.LearnOnlineMoreInfoComponent = LearnOnlineMoreInfoComponent;
+
+
+/***/ }),
+
 /***/ "./src/app/pages/learning-platform/learning-platform.component.css":
 /***/ (function(module, exports) {
 
@@ -2113,7 +2325,7 @@ module.exports = ""
 /***/ "./src/app/pages/learning-platform/learning-platform.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"main__body\">\n  <div class=\"container\">\n\n    <div class=\"login__page\">\n      <div class=\"row\">\n          <div class=\"card col-md-4 col-md-offset-4\">\n            <div class=\"login__card\">\n              <div class=\"card-block\">\n\n                  <form name=\"userform\" method=\"post\" #formCtrl=\"ngForm\">\n                    <h3 align=\"center\">Login Form</h3>\n                    <div class=\"form-group\">\n                      <label for=\"exampleInputEmail1\">Email address</label>\n                      <input type=\"email\" class=\"form-control\" [(ngModel)]=\"user.email\" name=\"email\" placeholder=\"Email\" required>\n                    </div>\n                    <div class=\"form-group\">\n                      <label for=\"exampleInputPassword1\">Password</label>\n                      <input type=\"password\" class=\"form-control\" [(ngModel)]=\"user.password\" name=\"password\" placeholder=\"Password\" required>\n                    </div>\n\n                    <div class=\"form-group\">\n                        <button type=\"buton\" class=\"btn btn-primary btn-block\" style=\"margin-bottom: 20px\" (click)=\"signInWithEmail()\" [disabled]=\"formCtrl.form.invalid\">\n                          Login with Email\n                        </button>\n                    </div>\n\n\n                    <div class=\"form-group\">\n                        <button type=\"buton\" class=\"btn btn-block\" (click)=\"signInWithFacebook()\">\n                          <i class=\"fa fa-facebook\" aria-hidden=\"true\"></i>\n                          Login with Facebook\n                        </button>\n\n                        <button type=\"button\" class=\"btn btn-block\" (click)=\"signInWithTwitter()\">\n                          <i class=\"fa fa-twitter\" aria-hidden=\"true\"></i>\n                          Login with Twitter\n                        </button>\n\n                        <button type=\"button\" class=\"btn btn-block\" (click)=\"signInWithGithub()\">\n                          <i class=\"fa fa-github\" aria-hidden=\"true\"></i>\n                          Login with Github\n                        </button>\n\n                        <button type=\"button\" class=\"btn btn-block\" (click)=\"signInWithGoogle()\">\n                          <i class=\"fa fa-google\" aria-hidden=\"true\"></i>\n                          Login with Google\n                        </button>\n                    </div>\n                  </form>\n\n              </div>\n            </div>\n          </div>\n\n      </div>\n    </div> <!-- end card -->\n\n  </div>  <!-- end container -->\n</div>\n\n\n\n"
+module.exports = "\n<div id='intro-learning'>\n  <app-intro-learning></app-intro-learning>\n</div>\n\n<div id='no-quit-callout'>\n  <app-no-quit-callout></app-no-quit-callout>\n</div>\n\n<div id='info-request-form'>\n  <app-info-request-form></app-info-request-form>\n</div>\n\n<div id='learn-online-more-info'>\n  <app-learn-online-more-info></app-learn-online-more-info>\n</div>\n\n<div id='about-us-different'>\n  <app-about-us-different></app-about-us-different>\n</div>\n<div id='mission-login'>\n  <app-mission-login></app-mission-login>\n</div>"
 
 /***/ }),
 
@@ -2191,6 +2403,106 @@ var LearningPlatformComponent = /** @class */ (function () {
     return LearningPlatformComponent;
 }());
 exports.LearningPlatformComponent = LearningPlatformComponent;
+
+
+/***/ }),
+
+/***/ "./src/app/pages/learning-platform/mission-login/mission-login.component.css":
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/pages/learning-platform/mission-login/mission-login.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  mission-login works!\n</p>\n<hr>\n<div class=\"main__body\">\n  <div class=\"container\">\n\n    <div class=\"login__page\">\n      <div class=\"row\">\n          <div class=\"card col-md-4 col-md-offset-4\">\n            <div class=\"login__card\">\n              <div class=\"card-block\">\n\n                  <form name=\"userform\" method=\"post\" #formCtrl=\"ngForm\">\n                    <h3 align=\"center\">Login Form</h3>\n                    <div class=\"form-group\">\n                      <label for=\"exampleInputEmail1\">Email address</label>\n                      <input type=\"email\" class=\"form-control\" [(ngModel)]=\"user.email\" name=\"email\" placeholder=\"Email\" required>\n                    </div>\n                    <div class=\"form-group\">\n                      <label for=\"exampleInputPassword1\">Password</label>\n                      <input type=\"password\" class=\"form-control\" [(ngModel)]=\"user.password\" name=\"password\" placeholder=\"Password\" required>\n                    </div>\n\n                    <div class=\"form-group\">\n                        <button type=\"buton\" class=\"btn btn-primary btn-block\" style=\"margin-bottom: 20px\" (click)=\"signInWithEmail()\" [disabled]=\"formCtrl.form.invalid\">\n                          Login with Email\n                        </button>\n                    </div>\n\n\n                    <div class=\"form-group\">\n                        <button type=\"buton\" class=\"btn btn-block\" (click)=\"signInWithFacebook()\">\n                          <i class=\"fa fa-facebook\" aria-hidden=\"true\"></i>\n                          Login with Facebook\n                        </button>\n\n                        <button type=\"button\" class=\"btn btn-block\" (click)=\"signInWithTwitter()\">\n                          <i class=\"fa fa-twitter\" aria-hidden=\"true\"></i>\n                          Login with Twitter\n                        </button>\n\n                        <button type=\"button\" class=\"btn btn-block\" (click)=\"signInWithGithub()\">\n                          <i class=\"fa fa-github\" aria-hidden=\"true\"></i>\n                          Login with Github\n                        </button>\n\n                        <button type=\"button\" class=\"btn btn-block\" (click)=\"signInWithGoogle()\">\n                          <i class=\"fa fa-google\" aria-hidden=\"true\"></i>\n                          Login with Google\n                        </button>\n                    </div>\n                  </form>\n\n              </div>\n            </div>\n          </div>\n\n      </div>\n    </div> <!-- end card -->\n\n  </div>  <!-- end container -->\n</div>\n\n\n\n"
+
+/***/ }),
+
+/***/ "./src/app/pages/learning-platform/mission-login/mission-login.component.ts":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var MissionLoginComponent = /** @class */ (function () {
+    function MissionLoginComponent() {
+    }
+    MissionLoginComponent.prototype.ngOnInit = function () {
+    };
+    MissionLoginComponent = __decorate([
+        core_1.Component({
+            selector: 'app-mission-login',
+            template: __webpack_require__("./src/app/pages/learning-platform/mission-login/mission-login.component.html"),
+            styles: [__webpack_require__("./src/app/pages/learning-platform/mission-login/mission-login.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], MissionLoginComponent);
+    return MissionLoginComponent;
+}());
+exports.MissionLoginComponent = MissionLoginComponent;
+
+
+/***/ }),
+
+/***/ "./src/app/pages/learning-platform/no-quit-callout/no-quit-callout.component.css":
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/pages/learning-platform/no-quit-callout/no-quit-callout.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  no-quit-callout works!\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/pages/learning-platform/no-quit-callout/no-quit-callout.component.ts":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var NoQuitCalloutComponent = /** @class */ (function () {
+    function NoQuitCalloutComponent() {
+    }
+    NoQuitCalloutComponent.prototype.ngOnInit = function () {
+    };
+    NoQuitCalloutComponent = __decorate([
+        core_1.Component({
+            selector: 'app-no-quit-callout',
+            template: __webpack_require__("./src/app/pages/learning-platform/no-quit-callout/no-quit-callout.component.html"),
+            styles: [__webpack_require__("./src/app/pages/learning-platform/no-quit-callout/no-quit-callout.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], NoQuitCalloutComponent);
+    return NoQuitCalloutComponent;
+}());
+exports.NoQuitCalloutComponent = NoQuitCalloutComponent;
 
 
 /***/ }),
