@@ -2258,7 +2258,7 @@ var InfoRequestFormComponent = /** @class */ (function () {
         };
     }
     InfoRequestFormComponent.prototype.submitFormToBackend = function () {
-        this.dataService.processAndStoreApplication(this.applicantInformation, function (_) { return console.log(_, 'sent data from info-request-form.component'); });
+        this.dataService.processAndStoreApplication(this.applicantInformation);
     };
     InfoRequestFormComponent.prototype.ngOnInit = function () {
     };
@@ -2525,7 +2525,7 @@ module.exports = ""
 /***/ "./src/app/pages/learning-platform/no-quit-callout/no-quit-callout.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h2>For Those With No Quit In Them</h2>\n<p>A great programmer once said:<br><br>\n  \"Don't ever ask if it's possible to code something. When you're good enough, you can create anything you can imagine. Coding is freedom, it's as simple as that.\"\n</p>"
+module.exports = "</div><h2>For Those With No Quit In Them</h2>\n<p>A great programmer once said:<br><br>\n  \"Don't ever ask if it's possible to code something. When you're good enough, you can create anything you can imagine. Coding is freedom, it's as simple as that.\"\n</p>"
 
 /***/ }),
 
@@ -3064,24 +3064,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-// import {AngularFire, AuthProviders, AuthMethods} from 'angularfire2';
+var firestore_1 = __webpack_require__("./node_modules/angularfire2/firestore/index.js");
+// import {AngularFire, AuthProviders, AuthMethods} from 'angularfire2/firestore';
 var DataService = /** @class */ (function () {
-    function DataService() {
+    function DataService(angularFirestore) {
+        this.angularFirestore = angularFirestore;
     }
-    DataService.prototype.processAndStoreApplication = function (info, callback) {
+    DataService.prototype.processAndStoreApplication = function (info) {
         // will pass it to db, processing as necessary.
-        var dat = JSON.stringify(info);
-        console.log(dat);
-        var n = 500;
-        while (n > 0) {
-            console.log(n);
-            --n;
-        }
-        return callback(dat);
     };
     DataService = __decorate([
         core_1.Injectable(),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [firestore_1.AngularFirestore])
     ], DataService);
     return DataService;
 }());

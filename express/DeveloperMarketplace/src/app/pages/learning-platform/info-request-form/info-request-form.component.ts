@@ -20,10 +20,7 @@ export class InfoRequestFormComponent implements OnInit {
   constructor( private dataService: DataService ) { }
 
   submitFormToBackend() {
-    this.dataService.processAndStoreApplication(
-      this.applicantInformation,
-      _ => console.log(_, 'sent data from info-request-form.component')
-    );
+    this.dataService.processAndStoreApplication(this.applicantInformation);
   }
 
   ngOnInit() {
