@@ -66,6 +66,7 @@ import { MissionLoginComponent } from './pages/learning-platform/mission-login/m
 import { FormFreeQuoteComponent } from './body/forms/form-free-quote/form-free-quote.component';
 import { MobilePortfolioComponent } from './body/mobile-portfolio/mobile-portfolio.component';
 import { ConsultationComponent } from './body/consultation/consultation.component';
+import { HomeOperatesComponent } from './pages/home/home-operates/home-operates.component';
 // import { NgStyle } from '@angular/common';
 
 @NgModule({ // annotated decorator for root module AppModule
@@ -117,7 +118,8 @@ import { ConsultationComponent } from './body/consultation/consultation.componen
     MissionLoginComponent,
     FormFreeQuoteComponent,
     MobilePortfolioComponent,
-    ConsultationComponent
+    ConsultationComponent,
+    HomeOperatesComponent
   ],
   imports: [ // The other angular modules that export material we need in this module
     BrowserModule, // All bits and pieces to run our app in the browser
