@@ -76,23 +76,6 @@ a {
     top: 56px;
     width: 220px;
 }
-
-/* .header_block .main_nav_block .nav_option_block>li:after {
-    color: #06aae2;
-    content: "\e114";
-    display: inline-block;
-    font-family: 'Glyphicons Halflings';
-    font-size: 7px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1;
-    position: absolute;
-    top: 55%;
-    transform: translateY(-50%);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    margin: 0px 0px 0px 5px;
-} */
 li {
     display: list-item;
     text-align: -webkit-match-parent;

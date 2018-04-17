@@ -30,17 +30,7 @@ export class HttpService {
     {blog: 'http://www.theamericanelement.com/'},
     {email: 'http://johnhavenbradley@sapperCoding.com'},
   ];
-
-
-
-
-  //   githubAccount: 'https://github.com/CrunchyJohnHaven',
-  //   linkedIn: 'https://linkedin.com/in/johnhavenbradley',
-  //   AmericanElement: 'http://www.theamericanelement.com/',
-  //   Email: 'http://johnhavenbradley@gmail.com',
-
-  // };
-
+  
   getProjectInfo() {
     return this.projectInfo;
   }
