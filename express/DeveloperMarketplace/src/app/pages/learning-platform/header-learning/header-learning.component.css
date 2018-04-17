@@ -7,7 +7,7 @@
       rgba(0,0,0,.5), 
       rgba(0,0,0,.5)
     ),
-    url('../../../assets/coverPhoto.png') no-repeat;
+    url('../../../../assets/coverPhoto.png') no-repeat;
     background-size: cover;
     background-repeat: no-repeat;
     text-shadow: black 0.3em 0.3em 0.3em;

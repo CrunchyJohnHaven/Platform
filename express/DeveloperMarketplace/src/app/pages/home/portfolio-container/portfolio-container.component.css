@@ -60,44 +60,44 @@ h6 {
 }
 .python > div > span.icon_block .stack_icon {
     background-position: 0px 1px;
-    background-image: url('../../../assets/python100.png');
+    background-image: url('../../../../assets/python100.png');
     background-size: cover;
     background-repeat: no-repeat;
     
 }
 .mean > div > span.icon_block .stack_icon {
     background-position: 0px 1px;
-    background-image: url('../../../assets/mean100.png');
+    background-image: url('../../../../assets/mean100.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
 .django > div > span.icon_block .stack_icon {
     background-position: 0px 1px;
-    background-image: url('../../../assets/django100.png');
+    background-image: url('../../../../assets/django100.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
 .django > div > span.icon_block .stack_icon {
     background-position: 0px 1px;
-    background-image: url('../../../assets/django100.png');
+    background-image: url('../../../../assets/django100.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
 .angular > div > span.icon_block .stack_icon {
     background-position: 0px 1px;
-    background-image: url('../../../assets/angular100.png');
+    background-image: url('../../../../assets/angular100.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
 .js > div > span.icon_block .stack_icon {
     background-position: 0px 1px;
-    background-image: url('../../../assets/javascript100.png');
+    background-image: url('../../../../assets/javascript100.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
 .swift > div > span.icon_block .stack_icon {
     background-position: 0px 1px;
-    background-image: url('../../../assets/swift100.png');
+    background-image: url('../../../../assets/swift100.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -120,7 +120,7 @@ h6 {
     background-size: 100% !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
-    background-image: url('../../../assets/america350x225.png')
+    background-image: url('../../../../assets/america350x225.png')
 }
 .stack_icon {
     display: block;
