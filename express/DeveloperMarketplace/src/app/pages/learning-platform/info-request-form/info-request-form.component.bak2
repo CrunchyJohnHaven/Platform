@@ -1,0 +1,20 @@
+
+  <p>First Name
+    <input type="text" required='true' [(ngModel)]='applicantInformation.firstName'>
+  </p>
+
+  <p> Last Name
+    <input type="text" required='true' [(ngModel)]='applicantInformation.lastName'>
+  </p>
+
+  <p>email address
+    <input type="text" required='true' [(ngModel)]='applicantInformation.email'>
+  </p>
+
+  <p>First Name
+    <input type="text" required='true' [(ngModel)]='applicantInformation.phoneNumber'>
+  </p>
+  <label>When is a good time?
+    <input type="text" required='true' [(ngModel)]='applicantInformation.timeOrComment'>
+  </label>
+  <button (click)='submitFormToBackend()'>

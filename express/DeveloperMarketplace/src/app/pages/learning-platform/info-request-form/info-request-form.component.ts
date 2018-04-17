@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../../../services/data.service';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-info-request-form',
@@ -8,7 +9,7 @@ import { DataService } from '../../../services/data.service';
 })
 export class InfoRequestFormComponent implements OnInit {
 
-  applicantInformation = {
+  applicantInformation: Object = {
     firstName: '',
     lastName: '',
     email: '',
@@ -19,11 +20,12 @@ export class InfoRequestFormComponent implements OnInit {
   constructor( private dataService: DataService ) { }
 
   submitFormToBackend() {
-    this.dataService.processAndStoreApplication(this.applicantInformation);
-    console.log('sent data from info-request-form.component');
+    this.dataService.processAndStoreApplication(
+      this.applicantInformation,
+      _ => console.log(_, 'sent data from info-request-form.component')
+    );
   }
 
   ngOnInit() {
   }
-
 }

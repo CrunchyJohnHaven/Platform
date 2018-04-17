@@ -25,7 +25,7 @@ export class FooterComponent implements OnInit {
         return location.href = 'https://theamericanelement.com';
       case 'email' :
         window.location.hash = 'your-page-element';
-        return this.hideForm = !this.hideForm;  
+        return this.hideForm = !this.hideForm;
       }
     }
   }

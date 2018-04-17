@@ -9,9 +9,16 @@ export class DataService {
   constructor() { }
 
 
-  processAndStoreApplication( info ) {
+  processAndStoreApplication( info, callback ) {
     // will pass it to db, processing as necessary.
-    info.forEach( item => console.log(item, info[item]) );
+    const dat = JSON.stringify(info);
+    console.log(dat);
+    let n = 500;
+    while (n > 0) {
+      console.log(n);
+      --n;
+    }
+    return callback(dat);
   }
 
 }
