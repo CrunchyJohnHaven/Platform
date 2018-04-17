@@ -1,0 +1,38 @@
+.begin-mission-container {
+    background-color: white;
+    diplay: inline-block;
+}
+.mission-icon-container {
+    min-width: 4vw;
+    min-height: 4vw;
+    background-color: #fffd54;
+    display: inline-block;
+}
+.login-reg-container {
+    background-color: white;
+    display: inline-block;
+}
+.login-container, reg-container {
+    background-color: #272733;
+    color: white;
+    display: inline-block
+}
+.row {
+    min-width: 40%;
+    display: inline-block;
+    margin-left: 5%;
+}
+.card.col-md-4 {
+    width: 100%;
+    
+    display: inline-block;
+}
+h3 {
+    display: inline-block;
+}
+.col-lg-4 {
+    width: 100%;
+    margin-top: 5%;
+    background-color: #272733; 
+    padding: 5%;
+}
