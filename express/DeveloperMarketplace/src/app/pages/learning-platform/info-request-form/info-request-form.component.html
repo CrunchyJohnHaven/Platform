@@ -1,58 +1,84 @@
-<div class="form" >
-    <div class="card card-block">
-      <h4 class="card-title">How can we help?</h4>
-      <br><br>
-      <form (submit)='submitFormToBackend()'>
-        <div class="form-group">
-          <label for="firstName">First Name</label>
-          <input
-            type="text"
-            class="form-control"
-            name="firstName"
-            required='true'
-            [(ngModel)]='applicantInformation.firstName'
-          >
-        </div>
-        <div class="form-group">
-          <label for="lastName">Last Name</label>
-          <input
-            type="text"
-            class="form-control"
-            name="lastName"
-            [(ngModel)]='applicantInformation.lastName'
-            required='true'
-          >
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input
-            type="text"
-            class="form-control"
-            name="email"
-            required='true'
-            [(ngModel)]='applicantInformation.email'
+<div class="info-container">
+  <div class="form" >
+      <div class="card card-block">
+        <h2 class="card-title">Apply Today</h2>
+        <h4>Talk to a Sapper Team Leader</h4>
+        <br><br>
+        <form (submit)='submitFormToBackend()'>
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input
+              type="text"
+              class="form-control"
+              name="firstName"
+              required='true'
+              [(ngModel)]='applicantInformation.firstName'
             >
-        </div>
-        <div class="form-group">
-          <label for="phoneNumber">Phone Number</label>
-          <input type="text"
-            class="form-control bfh-phone"
-            data-format="+1 (ddd) ddd-dddd"
-            name="phoneNumber"
-            [(ngModel)]='applicantInformation.phoneNumber'
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input
+              type="text"
+              class="form-control"
+              name="lastName"
+              [(ngModel)]='applicantInformation.lastName'
+              required='true'
             >
-        </div>
-        <div class="form-group">
-          <label for="whenToReach">When is a good time to reach you?</label>
-          <textarea
-            name="whenToReach"
-            rows="10" cols="30"
-            class="form-control"
-            name="whenToReach"
-            [(ngModel)]='applicantInformation.timeOrComment'
-            ></textarea>
-        </div>
-        <button name='submitbutton' type="submit" class="btn btn-success">Submit</button>
-      </form>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="text"
+              class="form-control"
+              name="email"
+              required='true'
+              [(ngModel)]='applicantInformation.email'
+              >
+          </div>
+          <div class="form-group">
+            <label for="phoneNumber">Phone Number</label>
+            <input type="text"
+              class="form-control bfh-phone"
+              data-format="+1 (ddd) ddd-dddd"
+              name="phoneNumber"
+              [(ngModel)]='applicantInformation.phoneNumber'
+              >
+          </div>
+          <div class="form-group">
+            <label for="whenToReach">When is a good time to reach you?</label>
+            <textarea
+              name="whenToReach"
+              rows="10" cols="30"
+              class="form-control"
+              name="whenToReach"
+              [(ngModel)]='applicantInformation.timeOrComment'
+              ></textarea>
+          </div>
+          <button name='submitbutton' type="submit" class="btn btn-success">Submit</button>
+        </form>
+    </div>
   </div>
-</div>
+  <div class="info-form-expect">
+    <h4>What to expect:</h4>
+    <ul>
+      <li>
+        <p>Talk to a Sapper</p>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <p>Develop a training plan</p>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <p>Get on track to become a sapper coder </p>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <p>Get your questions answered</p>
+      </li>
+    </ul>
+  </div>
+  </div>  
