@@ -51,11 +51,10 @@ import { FooterFormComponent } from './body/forms/footer-form/footer-form.compon
 import { FormWebComponent } from './body/forms/form-web/form-web.component';
 import { AuthService } from './services/auth.service';
 import { AuthGuard } from './services/auth-guard.service';
+import { DataService } from './services/data.service';
 import { MapComponent } from './body/map/map.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-// // changed prev line to following 2 lines; hopefully fix error
-// import { HttpClientModule } from '@angular/common/http';
-// import { HttpModule } from '@angular/http';
+
 import { AgmCoreModule } from '@agm/core';
 import { IntroLearningComponent } from './pages/learning-platform/intro-learning/intro-learning.component';
 import { NoQuitCalloutComponent } from './pages/learning-platform/no-quit-callout/no-quit-callout.component';
@@ -141,6 +140,7 @@ import { HomeTeamLeadsComponent } from './pages/home/home-team-leads/home-team-l
   providers: [
     AuthGuard,
     AuthService,
+    DataService,
     HttpService
   ], // added AuthGuard & AuthService here; hoping to fix injector error
   bootstrap: [AppComponent] // ID's the root module that angular should bootstrap when it starts the application

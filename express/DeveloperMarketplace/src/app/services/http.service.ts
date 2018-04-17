@@ -30,7 +30,7 @@ export class HttpService {
     {blog: 'http://www.theamericanelement.com/'},
     {email: 'http://johnhavenbradley@sapperCoding.com'},
   ];
-  
+
   getProjectInfo() {
     return this.projectInfo;
   }
