@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MissionLoginComponent implements OnInit {
 
+  user = {
+    email: '',
+    password: ''
+  };
+
   constructor() { }
 
   ngOnInit() {
