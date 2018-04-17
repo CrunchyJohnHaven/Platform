@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './headers/header/header.component';
+import { HeaderComponent } from './pages/home/header/header.component';
 import { HttpService } from './services/http.service';
 import { AboutmeComponent } from './body/aboutme/aboutme.component';
 import { ResumeComponent } from './body/resume/resume.component';
@@ -11,36 +11,36 @@ import { FormComponent } from './body/./forms/form/form.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule, MatCheckboxModule } from '@angular/material';
 import { NavBarComponent } from './base-components/nav-bar/nav-bar.component';
-import { PortfolioComponent } from './body/portfolio-container/portfolio/portfolio.component';
-import { PortfolioContainerComponent } from './body/portfolio-container/portfolio-container.component';
+import { PortfolioComponent } from './pages/home/portfolio-container/portfolio/portfolio.component';
+import { PortfolioContainerComponent } from './pages/home/portfolio-container/portfolio-container.component';
 import { WorkFormContentComponent } from './body/./forms/work-form-content/work-form-content.component';
 import { FooterComponent } from './base-components/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
-import { BodyAboutUsComponent } from './body/body-about-us/body-about-us.component';
-import { HeaderAboutComponent } from './headers/header-about/header-about.component';
+import { BodyAboutUsComponent } from './pages/about-us/body-about-us/body-about-us.component';
+import { HeaderAboutComponent } from './pages/about-us/header-about/header-about.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { LearningPlatformComponent } from './pages/learning-platform/learning-platform.component';
 import { AdminComponent } from './admin/admin/admin.component';
-import { BodyAdminComponent } from './body/body-admin/body-admin.component';
-import { BodyLearningComponent } from './body/body-learning/body-learning.component';
-import { HeaderAdminComponent } from './headers/header-admin/header-admin.component';
-import { HeaderLearningComponent } from './headers/header-learning/header-learning.component';
+import { BodyAdminComponent } from './admin/admin/body-admin/body-admin.component';
+import { BodyLearningComponent } from './pages/learning-platform/body-learning/body-learning.component';
+import { HeaderAdminComponent } from './admin/admin/header-admin/header-admin.component';
+import { HeaderLearningComponent } from './pages/learning-platform/header-learning/header-learning.component';
 import { PlatformDashboardComponent } from './platform/platform-dashboard/platform-dashboard.component';
 import { WebDesignComponent } from './pages/web-design/web-design.component';
 import { CustomAppsComponent } from './pages/custom-apps/custom-apps.component';
 import { MarketingComponent } from './pages/marketing/marketing.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { BlogComponent } from './pages/blog/blog.component';
-import { HeaderWebComponent } from './headers/header-web/header-web.component';
-import { HeaderCustomAppsComponent } from './headers/header-custom-apps/header-custom-apps.component';
-import { HeaderContactComponent } from './headers/header-contact/header-contact.component';
-import { BodyWebComponent } from './body/body-web/body-web.component';
-import { BodyCustomAppsComponent } from './body/body-custom-apps/body-custom-apps.component';
-import { BodyMarketingComponent } from './body/body-marketing/body-marketing.component';
-import { BodyContactComponent } from './body/body-contact/body-contact.component';
-import { BodyBlogComponent } from './body/body-blog/body-blog.component';
-import { HeaderMarketingComponent } from './headers/header-marketing/header-marketing.component';
-import { HeaderBlogComponent } from './headers/header-blog/header-blog.component';
+import { HeaderWebComponent } from './pages/web-design/header-web/header-web.component';
+import { HeaderCustomAppsComponent } from './pages/custom-apps/header-custom-apps/header-custom-apps.component';
+import { HeaderContactComponent } from './pages/contact/header-contact/header-contact.component';
+import { BodyWebComponent } from './pages/web-design/body-web/body-web.component';
+import { BodyCustomAppsComponent } from './pages/custom-apps/body-custom-apps/body-custom-apps.component';
+import { BodyMarketingComponent } from './pages/marketing/body-marketing/body-marketing.component';
+import { BodyContactComponent } from './pages/contact/body-contact/body-contact.component';
+import { BodyBlogComponent } from './pages/blog/body-blog/body-blog.component';
+import { HeaderMarketingComponent } from './pages/marketing/header-marketing/header-marketing.component';
+import { HeaderBlogComponent } from './pages/blog/header-blog/header-blog.component';
 
 import { environment } from '../environments/environment';
 import { AngularFireModule } from 'angularfire2';
@@ -67,6 +67,7 @@ import { FormFreeQuoteComponent } from './body/forms/form-free-quote/form-free-q
 import { MobilePortfolioComponent } from './body/mobile-portfolio/mobile-portfolio.component';
 import { ConsultationComponent } from './body/consultation/consultation.component';
 import { HomeOperatesComponent } from './pages/home/home-operates/home-operates.component';
+import { HomeTeamLeadsComponent } from './pages/home/home-team-leads/home-team-leads.component';
 // import { NgStyle } from '@angular/common';
 
 @NgModule({ // annotated decorator for root module AppModule
@@ -119,7 +120,8 @@ import { HomeOperatesComponent } from './pages/home/home-operates/home-operates.
     FormFreeQuoteComponent,
     MobilePortfolioComponent,
     ConsultationComponent,
-    HomeOperatesComponent
+    HomeOperatesComponent,
+    HomeTeamLeadsComponent
   ],
   imports: [ // The other angular modules that export material we need in this module
     BrowserModule, // All bits and pieces to run our app in the browser
