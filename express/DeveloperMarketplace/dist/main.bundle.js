@@ -360,7 +360,7 @@ var auth_service_1 = __webpack_require__("./src/app/services/auth.service.ts");
 var auth_guard_service_1 = __webpack_require__("./src/app/services/auth-guard.service.ts");
 var data_service_1 = __webpack_require__("./src/app/services/data.service.ts");
 var map_component_1 = __webpack_require__("./src/app/body/map/map.component.ts");
-var http_1 = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
+var http_1 = __webpack_require__("./node_modules/@angular/common/@angular/common/http.es5.js");
 var core_2 = __webpack_require__("./node_modules/@agm/core/index.js");
 var intro_learning_component_1 = __webpack_require__("./src/app/pages/learning-platform/intro-learning/intro-learning.component.ts");
 var no_quit_callout_component_1 = __webpack_require__("./src/app/pages/learning-platform/no-quit-callout/no-quit-callout.component.ts");
@@ -2218,7 +2218,7 @@ exports.HeaderLearningComponent = HeaderLearningComponent;
 /***/ "./src/app/pages/learning-platform/info-request-form/info-request-form.component.css":
 /***/ (function(module, exports) {
 
-module.exports = ".info-container {\n    background-color: #272733;\n    color: white;\n}"
+module.exports = ".info-container {\n    display: block;\n}\n"
 
 /***/ }),
 
@@ -2380,7 +2380,7 @@ exports.LearnOnlineMoreInfoComponent = LearnOnlineMoreInfoComponent;
 /***/ "./src/app/pages/learning-platform/learning-platform.component.css":
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "#info-request-form {\n    display: block;\n}\n#no-quit-callout {\n    display: inline;\n}"
 
 /***/ }),
 
@@ -2518,14 +2518,14 @@ exports.MissionLoginComponent = MissionLoginComponent;
 /***/ "./src/app/pages/learning-platform/no-quit-callout/no-quit-callout.component.css":
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = ".col-md-8 {\n    width: 47.666667%;\n    padding: 3%;\n}\n.col-md-6 {\n    background-color: inherit;\n    color: black;\n    padding: 3%;\n}\n.quit-container {\n    background-color: #272733;\n    color: #fff;\n    height: -webkit-fit-content;\n    height: -moz-fit-content;\n    height: fit-content;\n    padding: 0px;\n    position: relative;\n    text-align: right;\n    top: 0vw;\n    display: -webkit-box;\n    z-index: 9999;\n    width: 100%;\n}\n.row {\n    height: 23vw;\n    background: inherit;\n    color: gold;\n}\n.image {\n    height: 23vw;\n    background: white;\n    background-image: url('Learning1.028689108d947c8f6f89.jpg');\n    background-size: cover;\n    background-repeat: no-repeat;\n    background-position-y: -69px;\n}\n.row h2 {\n    margin-top: 19%;\n}\np {\n    text-align: center;\n}\nh2 {\n    text-align: center;\n}\n"
 
 /***/ }),
 
 /***/ "./src/app/pages/learning-platform/no-quit-callout/no-quit-callout.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h2>For Those With No Quit In Them</h2>\n<p>A great programmer once said:<br><br>\n  \"Don't ever ask if it's possible to code something. When you're good enough, you can create anything you can imagine. Coding is freedom, it's as simple as that.\"\n</p>"
+module.exports = "\n<div class=\"quit-container\">\n  <div class=\"col-md-6\">\n    <div class=\"row\">\n      <h2>For Those With No Quit In Them</h2>\n      <p>A great programmer once said:<br><br>\n        \"Don't ever ask if it's possible to code something. When you're good enough, you can create anything you can imagine. Coding is freedom, it's as simple as that.\"\n      </p>\n    </div>\n  </div>\n  <div class=\"col-md-8\">\n    <div class=\"row image\">\n      <!-- <div class=\"learning-image1\"></div> -->\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -3129,7 +3129,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 console.log('********* HTTP **********');
 var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-var http_1 = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
+var http_1 = __webpack_require__("./node_modules/@angular/common/@angular/common/http.es5.js");
 var HttpService = /** @class */ (function () {
     function HttpService(_http) {
         this._http = _http;
