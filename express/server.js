@@ -36,22 +36,6 @@ let PostSchema = new Schema({
   }
 }, { timestamps: true });
 
-// let UserSchema = new Schema({
-//   name: {
-//     type: String,
-//     required: true
-//   },
-//   email: {
-//     type: String,
-//     required: true,
-//     unique: true
-//   }
-// })
-
-
-
-
-
 
 Post = mongoose.model('Product', PostSchema);
 

@@ -2225,7 +2225,7 @@ module.exports = ""
 /***/ "./src/app/pages/learning-platform/info-request-form/info-request-form.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"form\" >\n    <div class=\"card card-block\">\n      <h4 class=\"card-title\">How can we help?</h4>\n      <br><br>\n      <form name='userform' (submit)='submitFormToBackend()'>\n        <div class=\"form-group\">\n          <label for=\"firstName\">First Name</label>\n          <input\n            type=\"text\"\n            class=\"form-control\"\n            name=\"firstName\"\n            required='true'\n            [(ngModel)]='applicantInformation.firstName'\n          >\n        </div>\n        <div class=\"form-group\">\n          <label for=\"lastName\">Last Name</label>\n          <input\n            type=\"text\"\n            class=\"form-control\"\n            name=\"lastName\"\n            [(ngModel)]='applicantInformation.lastName'\n            required='true'\n          >\n        </div>\n        <div class=\"form-group\">\n          <label for=\"email\">Email</label>\n          <input\n            type=\"text\"\n            class=\"form-control\"\n            name=\"email\"\n            required='true'\n            [(ngModel)]='applicantInformation.email'\n            >\n        </div>\n        <div class=\"form-group\">\n          <label for=\"phoneNumber\">Phone Number</label>\n          <input type=\"text\"\n            class=\"form-control bfh-phone\"\n            data-format=\"+1 (ddd) ddd-dddd\"\n            name=\"phoneNumber\"\n            [(ngModel)]='applicantInformation.phoneNumber'\n            >\n        </div>\n        <div class=\"form-group\">\n          <label for=\"whenToReach\">When is a good time to reach you?</label>\n          <textarea\n            name=\"whenToReach\"\n            rows=\"10\" cols=\"30\"\n            class=\"form-control\"\n            name=\"whenToReach\"\n            [(ngModel)]='applicantInformation.timeOrComment'\n            ></textarea>\n        </div>\n        <button name='submitbutton' type=\"submit\" class=\"btn btn-success\">Submit</button>\n      </form>\n  </div>\n</div>\n"
+module.exports = "<div class=\"form\" >\n    <div class=\"card card-block\">\n      <h4 class=\"card-title\">How can we help?</h4>\n      <br><br>\n      <form (submit)='submitFormToBackend()'>\n        <div class=\"form-group\">\n          <label for=\"firstName\">First Name</label>\n          <input\n            type=\"text\"\n            class=\"form-control\"\n            name=\"firstName\"\n            required='true'\n            [(ngModel)]='applicantInformation.firstName'\n          >\n        </div>\n        <div class=\"form-group\">\n          <label for=\"lastName\">Last Name</label>\n          <input\n            type=\"text\"\n            class=\"form-control\"\n            name=\"lastName\"\n            [(ngModel)]='applicantInformation.lastName'\n            required='true'\n          >\n        </div>\n        <div class=\"form-group\">\n          <label for=\"email\">Email</label>\n          <input\n            type=\"text\"\n            class=\"form-control\"\n            name=\"email\"\n            required='true'\n            [(ngModel)]='applicantInformation.email'\n            >\n        </div>\n        <div class=\"form-group\">\n          <label for=\"phoneNumber\">Phone Number</label>\n          <input type=\"text\"\n            class=\"form-control bfh-phone\"\n            data-format=\"+1 (ddd) ddd-dddd\"\n            name=\"phoneNumber\"\n            [(ngModel)]='applicantInformation.phoneNumber'\n            >\n        </div>\n        <div class=\"form-group\">\n          <label for=\"whenToReach\">When is a good time to reach you?</label>\n          <textarea\n            name=\"whenToReach\"\n            rows=\"10\" cols=\"30\"\n            class=\"form-control\"\n            name=\"whenToReach\"\n            [(ngModel)]='applicantInformation.timeOrComment'\n            ></textarea>\n        </div>\n        <button name='submitbutton' type=\"submit\" class=\"btn btn-success\">Submit</button>\n      </form>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -2258,8 +2258,7 @@ var InfoRequestFormComponent = /** @class */ (function () {
         };
     }
     InfoRequestFormComponent.prototype.submitFormToBackend = function () {
-        this.dataService.processAndStoreApplication(this.applicantInformation);
-        console.log('sent data from info-request-form.component');
+        this.dataService.processAndStoreApplication(this.applicantInformation, function (_) { return console.log(_, 'sent data from info-request-form.component'); });
     };
     InfoRequestFormComponent.prototype.ngOnInit = function () {
     };
@@ -2414,44 +2413,36 @@ var LearningPlatformComponent = /** @class */ (function () {
     function LearningPlatformComponent(authService, router) {
         this.authService = authService;
         this.router = router;
-        this.user = {
-            email: '',
-            password: ''
-        };
     }
-    LearningPlatformComponent.prototype.signInWithFacebook = function () {
-        var _this = this;
-        this.authService.signInWithFacebook()
-            .then(function (res) {
-            _this.router.navigate(['learning-content']);
-        })
-            .catch(function (err) { return console.log(err); });
-    };
-    LearningPlatformComponent.prototype.signInWithGoogle = function () {
-        var _this = this;
-        this.authService.signInWithGoogle()
-            .then(function (res) {
-            _this.router.navigate(['learning-content']);
-        })
-            .catch(function (err) { return console.log(err); });
-    };
-    LearningPlatformComponent.prototype.signInWithGithub = function () {
-        var _this = this;
-        this.authService.signInWithGithub()
-            .then(function (res) {
-            _this.router.navigate(['learning-content']);
-        })
-            .catch(function (err) { return console.log(err); });
-    };
-    LearningPlatformComponent.prototype.signInWithEmail = function () {
-        var _this = this;
-        this.authService.signInRegular(this.user.email, this.user.password)
-            .then(function (res) {
-            console.log(res);
-            _this.router.navigate(['learning-content']);
-        })
-            .catch(function (err) { return console.log('error: ' + err); });
-    };
+    // signInWithFacebook() {
+    //   this.authService.signInWithFacebook()
+    //   .then((res) => {
+    //       this.router.navigate(['learning-content']);
+    //     })
+    //   .catch((err) => console.log(err));
+    // }
+    // signInWithGoogle() {
+    //   this.authService.signInWithGoogle()
+    //   .then((res) => {
+    //       this.router.navigate(['learning-content']);
+    //     })
+    //   .catch((err) => console.log(err));
+    // }
+    // signInWithGithub() {
+    //   this.authService.signInWithGithub()
+    //   .then((res) => {
+    //       this.router.navigate(['learning-content']);
+    //     })
+    //   .catch((err) => console.log(err));
+    // }
+    // signInWithEmail() {
+    //   this.authService.signInRegular(this.user.email, this.user.password)
+    //     .then((res) => {
+    //       console.log(res);
+    //       this.router.navigate(['learning-content']);
+    //     })
+    //     .catch((err) => console.log('error: ' + err));
+    // }
     LearningPlatformComponent.prototype.ngOnInit = function () {
     };
     LearningPlatformComponent = __decorate([
@@ -3073,9 +3064,16 @@ var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
 var DataService = /** @class */ (function () {
     function DataService() {
     }
-    DataService.prototype.processAndStoreApplication = function (info) {
+    DataService.prototype.processAndStoreApplication = function (info, callback) {
         // will pass it to db, processing as necessary.
-        info.forEach(function (item) { return console.log(item, info[item]); });
+        var dat = JSON.stringify(info);
+        console.log(dat);
+        var n = 500;
+        while (n > 0) {
+            console.log(n);
+            --n;
+        }
+        return callback(dat);
     };
     DataService = __decorate([
         core_1.Injectable(),
