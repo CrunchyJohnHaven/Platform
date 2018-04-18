@@ -6,40 +6,38 @@ a {
 .header_block {
     background: #1f2022;
     display: block;
-    margin: 56px 0px 0px;
+    margin: 3.94vw 0px 0px;
     width: 100%;
 }
+.navIcon {
+    background-image: url('../../../assets/sapperNav.svg');
+    left: -5.49vw;
+    width: 179px;
+    top: 8%;
+    left: auto;
+    min-width: 179px;
+    min-height: 56px;
+    background-repeat: no-repeat;
+}
 
-.header_block .main_nav_block {
+.main_nav_block {
     background-color: #1f2022;
     color: #fff;
-    height: 56px;
-    padding: 0px 40px 0px 0px;
+    height: 4.5vw;
+    padding: 0px 3vw 0px 0px;
     position: fixed;
     text-align: right;
     top: 0px;
     z-index: 9999;
     width: 100%;
 }
-:after, :before {
-    box-sizing: border-box;
-}
-.header_block .main_nav_block .cd_logo {
-    display: block;
-    height: 42px;
-    position: absolute;
-    left: 30px;
-    width: 140px;
-    top: 50%;
-    background-color: yellow;
-}
-.header_block .main_nav_block .nav_option_block {
-    height: 56px;
+.nav_option_block {
+    height: 3.94vw;
     list-style-type: none;
     margin: 0px;
     padding: 0px;
 }
-.header_block .main_nav_block .nav_option_block>li {
+.nav_option_block>li {
     cursor: pointer;
     display: inline-block;
     font-style: normal;
@@ -49,39 +47,30 @@ a {
     font-variant-east-asian: normal;
     font-weight: normal;
     font-stretch: normal;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1.1vw;
+    line-height: 1.409vw;
     font-family: ProximaNova-Bold, tahoma, verdana, arial, sans-serif;
-    height: 56px;
-    margin: 0px 0px 0px 28px;
-    padding: 12px 18px;
+    height: 3.94vw;
+    margin: 0px 0px 0px 0.845vw;
+    padding: 0.845vw 1.8vw;
     position: relative;
     vertical-align: middle;
     z-index: 999;
 }
-.header_block .main_nav_block .nav_option_block>li:first-child {
+.nav_option_block>li:first-child {
     margin: 0px;
-    margin-top: 0px;
+    margin-top: 0.5vw;
     margin-right: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
-}
-.header_block .main_nav_block .nav_option_block>li>.dropdown_menu {
-    display: none;
-    background-color: #272634;
-    padding: 0px 0px 1px;
-    position: absolute;
-    left: 0px;
-    text-align: left;
-    top: 56px;
-    width: 220px;
 }
 li {
     display: list-item;
     text-align: -webkit-match-parent;
 }
-.header_block .main_nav_block .nav_option_block, .header_block .main_nav_block .cta_btns {
+.cta_btns {
     display: inline-block;
-    margin: 0px 0px 0px 20px;
+    margin: 0px 0px 0px 2vw;
     vertical-align: middle;
+    font-size: 1.1vw;
 }
