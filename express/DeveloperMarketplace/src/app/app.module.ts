@@ -44,10 +44,11 @@ import { HeaderBlogComponent } from './pages/blog/header-blog/header-blog.compon
 
 import { environment } from '../environments/environment';
 import { AngularFireModule } from 'angularfire2';
-import { AngularFirestore } from 'angularfire2/firestore';
-import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
+// import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
-import * as firebase from 'firebase/app';
+// import * as firebase from 'firebase/app';
+
 import { FooterFormComponent } from './body/forms/footer-form/footer-form.component';
 import { FormWebComponent } from './body/forms/form-web/form-web.component';
 import { AuthService } from './services/auth.service';
@@ -128,7 +129,7 @@ import { HomeTeamLeadsComponent } from './pages/home/home-team-leads/home-team-l
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
-    AngularFireDatabaseModule,
+    AngularFirestoreModule,
     FormsModule,
     BrowserAnimationsModule,
     HttpClientModule,

@@ -352,8 +352,10 @@ var header_marketing_component_1 = __webpack_require__("./src/app/pages/marketin
 var header_blog_component_1 = __webpack_require__("./src/app/pages/blog/header-blog/header-blog.component.ts");
 var environment_1 = __webpack_require__("./src/environments/environment.ts");
 var angularfire2_1 = __webpack_require__("./node_modules/angularfire2/index.js");
-var database_1 = __webpack_require__("./node_modules/angularfire2/database/index.js");
+var firestore_1 = __webpack_require__("./node_modules/angularfire2/firestore/index.js");
+// import { AngularFireDatabaseModule } from 'angularfire2/database';
 var auth_1 = __webpack_require__("./node_modules/angularfire2/auth/index.js");
+// import * as firebase from 'firebase/app';
 var footer_form_component_1 = __webpack_require__("./src/app/body/forms/footer-form/footer-form.component.ts");
 var form_web_component_1 = __webpack_require__("./src/app/body/forms/form-web/form-web.component.ts");
 var auth_service_1 = __webpack_require__("./src/app/services/auth.service.ts");
@@ -436,7 +438,7 @@ var AppModule = /** @class */ (function () {
                 app_routing_module_1.AppRoutingModule,
                 angularfire2_1.AngularFireModule.initializeApp(environment_1.environment.firebase),
                 auth_1.AngularFireAuthModule,
-                database_1.AngularFireDatabaseModule,
+                firestore_1.AngularFirestoreModule,
                 forms_1.FormsModule,
                 animations_1.BrowserAnimationsModule,
                 http_1.HttpClientModule,
@@ -3066,10 +3068,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
 var firestore_1 = __webpack_require__("./node_modules/angularfire2/firestore/index.js");
-// import {AngularFire, AuthProviders, AuthMethods} from 'angularfire2/firestore';
 var DataService = /** @class */ (function () {
-    function DataService(angularFirestore) {
-        this.angularFirestore = angularFirestore;
+    function DataService(afs) {
+        this.afs = afs;
     }
     DataService.prototype.processAndStoreApplication = function (info) {
         // will pass it to db, processing as necessary.

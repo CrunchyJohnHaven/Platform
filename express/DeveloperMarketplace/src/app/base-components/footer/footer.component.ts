@@ -17,8 +17,8 @@ export class FooterComponent implements OnInit {
     this.socialMediaInfo = this.httpService.getSocialMediaInfo();
   }
   mediaRedirect(title) {
-    console.log('media: ', title)
-    switch(title) {
+    console.log('media: ', title);
+    switch (title) {
       case 'linkedIn' :
         return location.href = 'https://www.linkedin.com/in/johnhavenbradley';
       case 'blog' :

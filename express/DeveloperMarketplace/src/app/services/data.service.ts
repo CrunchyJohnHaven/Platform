@@ -1,15 +1,24 @@
 import { Injectable } from '@angular/core';
-import { AngularFirestore } from 'angularfire2/firestore';
+
+import { Router } from '@angular/router';
+
+
+import { AngularFireAuth } from 'angularfire2/auth';
+import { AngularFirestore, AngularFirestoreDocument } from 'angularfire2/firestore';
 import * as firebase from 'firebase/app';
 import { Observable } from 'rxjs/Observable';
-// import {AngularFire, AuthProviders, AuthMethods} from 'angularfire2/firestore';
+
 
 
 
 @Injectable()
 export class DataService {
 
-  constructor( private angularFirestore: AngularFirestore ) { }
+  private fireDocRecord: AngularFirestoreDocument<any>;
+
+
+  constructor( private afs: AngularFirestore ) {  }
+
 
 
   processAndStoreApplication( info ) {
