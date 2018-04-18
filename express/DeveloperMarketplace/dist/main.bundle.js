@@ -534,7 +534,7 @@ exports.FooterComponent = FooterComponent;
 /***/ "./src/app/base-components/nav-bar/nav-bar.component.css":
 /***/ (function(module, exports) {
 
-module.exports = "a {\n    color: #fff;\n    text-decoration: none;\n}\n\n.header_block {\n    background: #1f2022;\n    display: block;\n    margin: 3.94vw 0px 0px;\n    width: 100%;\n}\n\n.navIcon {\n    min-width: 12vw;\n    min-height: 8vh;\n    padding: 4px;\n\n}\n\n.navIconImg {\n    position: relative;\n}\n\n.main_nav_block {\n    background-color: #1f2022;\n    color: #fff;\n    height: 4.5vw;\n    padding: 0px 3vw 0px 0px;\n    position: fixed;\n    text-align: right;\n    top: 0px;\n    z-index: 9999;\n    width: 100%;\n    min-height: 12vh;\n}\n\n.nav_option_block {\n    height: 3.94vw;\n    list-style-type: none;\n    margin: 0px;\n    padding: 0px;\n}\n\n.nav_option_block>li {\n    cursor: pointer;\n    display: inline-block;\n    font-style: normal;\n    -webkit-font-variant-ligatures: normal;\n            font-variant-ligatures: normal;\n    font-variant-caps: normal;\n    font-variant-numeric: normal;\n    font-variant-east-asian: normal;\n    font-weight: normal;\n    font-stretch: normal;\n    font-size: 1.1vw;\n    line-height: 1.409vw;\n    font-family: ProximaNova-Bold, tahoma, verdana, arial, sans-serif;\n    height: 3.94vw;\n    margin: 0px 0px 0px 0.845vw;\n    padding: 0.845vw 1.8vw;\n    position: relative;\n    vertical-align: middle;\n    z-index: 999;\n}\n\n.nav_option_block>li:first-child {\n    margin: 0px;\n    margin-top: 0.5vw;\n    margin-right: 0px;\n    margin-bottom: 0px;\n    margin-left: 0px;\n}\n\nli {\n    display: list-item;\n    text-align: -webkit-match-parent;\n}\n\n.cta_btns {\n    display: inline-block;\n    margin: 0px 0px 0px 2vw;\n    vertical-align: middle;\n    font-size: 1.1vw;\n}\n"
+module.exports = "a {\n    color: #fff;\n    text-decoration: none;\n}\n\n.header_block {\n    background: #1f2022;\n    display: block;\n    margin: 3.94vw 0px 0px;\n    width: 100%;\n}\n\n.navIcon {\n    min-width: 12vw;\n    min-height: 8vh;\n    padding: 4px;\n\n}\n\n.navIconImg {\n    position: relative;\n}\n\n.main_nav_block {\n    background-color: #1f2022;\n    color: #fff;\n    height: 8vh;\n    padding: 0px 3vw 0px 0px;\n    position: fixed;\n    text-align: right;\n    top: 0px;\n    z-index: 9999;\n    width: 100%;\n    min-height: 12vh;\n}\n\n.nav_option_block {\n    height: 3.94vw;\n    list-style-type: none;\n    margin: 0px;\n    padding: 0px;\n}\n\n.nav_option_block>li {\n    cursor: pointer;\n    display: inline-block;\n    font-style: normal;\n    -webkit-font-variant-ligatures: normal;\n            font-variant-ligatures: normal;\n    font-variant-caps: normal;\n    font-variant-numeric: normal;\n    font-variant-east-asian: normal;\n    font-weight: normal;\n    font-stretch: normal;\n    font-size: 1.1vw;\n    line-height: 1.409vw;\n    font-family: ProximaNova-Bold, tahoma, verdana, arial, sans-serif;\n    height: 3.94vw;\n    margin: 0px 0px 0px 0.845vw;\n    padding: 0.845vw 1.8vw;\n    position: relative;\n    vertical-align: middle;\n    z-index: 999;\n}\n\n.nav_option_block>li:first-child {\n    margin: 0px;\n    margin-top: 0.5vw;\n    margin-right: 0px;\n    margin-bottom: 0px;\n    margin-left: 0px;\n}\n\nli {\n    display: list-item;\n    text-align: -webkit-match-parent;\n}\n\n.cta_btns {\n    display: inline-block;\n    margin: 0px 0px 0px 2vw;\n    vertical-align: middle;\n    font-size: 1.1vw;\n}\n"
 
 /***/ }),
 
@@ -2385,14 +2385,14 @@ exports.LearnOnlineMoreInfoComponent = LearnOnlineMoreInfoComponent;
 /***/ "./src/app/pages/learning-platform/learning-platform.component.css":
 /***/ (function(module, exports) {
 
-module.exports = "#info-request-form {\n    display: block;\n}\n#no-quit-callout {\n    display: inline;\n}"
+module.exports = "#intro-learning {\n    margin-top: 12vh;\n}\n\n.learningpage {\n    background: #1f2022;\n}\n\n/* #info-request-form {\n    display: block;\n}\n#no-quit-callout {\n    display: inline;\n} */"
 
 /***/ }),
 
 /***/ "./src/app/pages/learning-platform/learning-platform.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div id='intro-learning'>\n  <app-intro-learning></app-intro-learning>\n</div>\n\n<div id='no-quit-callout'>\n  <app-no-quit-callout></app-no-quit-callout>\n</div>\n\n<div id='info-request-form'>\n  <app-info-request-form></app-info-request-form>\n</div>\n\n<div id='learn-online-more-info'>\n  <app-learn-online-more-info></app-learn-online-more-info>\n</div>\n\n<div id='about-us-different'>\n  <app-about-us-different></app-about-us-different>\n</div>\n<div id='mission-login'>\n  <app-mission-login></app-mission-login>\n</div>"
+module.exports = "\n  <div class='learningpage'>\n    <div id='intro-learning' class='container-fluid'>\n    <app-intro-learning></app-intro-learning>\n  </div>\n  <hr class='my-4'>\n  <div id='no-quit-callout' class='container-fluid'>\n    <app-no-quit-callout></app-no-quit-callout>\n  </div>\n  <hr class='my-4'>\n\n  <div id='info-request-form' class='container-fluid'>\n    <app-info-request-form></app-info-request-form>\n  </div>\n  <hr class='my-4'>\n\n  <div id='learn-online-more-info' class='container-fluid'>\n    <app-learn-online-more-info></app-learn-online-more-info>\n  </div>\n  <hr class='my-4'>\n\n  <div id='about-us-different' class='container-fluid'>\n    <app-about-us-different></app-about-us-different>\n  </div>\n  <hr class='my-4'>\n\n  <div id='mission-login' class='container-fluid'>\n    <app-mission-login></app-mission-login>\n  </div></div>"
 
 /***/ }),
 
@@ -2530,7 +2530,7 @@ module.exports = ".col-md-8 {\n    width: 47.666667%;\n    padding: 3%;\n}\n.col
 /***/ "./src/app/pages/learning-platform/no-quit-callout/no-quit-callout.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n<div class=\"quit-container\">\n  <div class=\"col-md-6\">\n    <div class=\"row\">\n      <h2>For Those With No Quit In Them</h2>\n      <p>A great programmer once said:<br><br>\n        \"Don't ever ask if it's possible to code something. When you're good enough, you can create anything you can imagine. Coding is freedom, it's as simple as that.\"\n      </p>\n    </div>\n  </div>\n  <div class=\"col-md-8\">\n    <div class=\"row image\">\n      <!-- <div class=\"learning-image1\"></div> -->\n    </div>\n  </div>\n</div>"
+module.exports = "\n<div class=\"jumbotron jumbotron-fluid\">\n  <div class=\"col-md-6\">\n    <div class=\"container\">\n      <h2>For Those With No Quit In Them</h2>\n      <p>A great programmer once said:<br><br>\n        \"Don't ever ask if it's possible to code something. When you're good enough, you can create anything you can imagine. Coding is freedom, it's as simple as that.\"\n      </p>\n    </div>\n  </div>\n    <img class='col-md-4' src='../../../../assets/Learning1.jpg' alt=\"\">\n\n</div>"
 
 /***/ }),
 
