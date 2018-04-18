@@ -1,10 +1,12 @@
 console.log('********* HTTP **********');
-
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+
 @Injectable()
 export class HttpService {
+  errors = {};
   constructor(private _http: HttpClient) { }
+
   private projectInfo = [
       {
         title: 'TheAmericanElement.com',
@@ -38,7 +40,14 @@ export class HttpService {
     return this.socialMediaInfo;
   }
   newContact(newContact) {
-    console.log('addContact http');
-    return this._http.post('/contact', newContact);
+    console.log('addContact http', newContact);
+    this._http.post('/post', newContact);
+  }
+  renderErrors(data) {
+    console.log('*** SERVICE - renderErrors() ****');
+    const errors = {};
+    if ('name' in data.error.errors) {
+      errors['name'] = data.error.errors.name.message;
+    }
   }
 }

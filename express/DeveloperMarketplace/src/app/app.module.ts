@@ -41,7 +41,6 @@ import { BodyContactComponent } from './pages/contact/body-contact/body-contact.
 import { BodyBlogComponent } from './pages/blog/body-blog/body-blog.component';
 import { HeaderMarketingComponent } from './pages/marketing/header-marketing/header-marketing.component';
 import { HeaderBlogComponent } from './pages/blog/header-blog/header-blog.component';
-
 import { environment } from '../environments/environment';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
@@ -55,8 +54,7 @@ import { AuthService } from './services/auth.service';
 import { AuthGuard } from './services/auth-guard.service';
 import { DataService } from './services/data.service';
 import { MapComponent } from './body/map/map.component';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
-
+import { HttpClientModule } from '@angular/common/http'; /// <--- here
 import { AgmCoreModule } from '@agm/core';
 import { IntroLearningComponent } from './pages/learning-platform/intro-learning/intro-learning.component';
 import { NoQuitCalloutComponent } from './pages/learning-platform/no-quit-callout/no-quit-callout.component';
@@ -146,7 +144,7 @@ import { ShowcaseComponent } from './pages/web-design/showcase/showcase.componen
     AuthGuard,
     AuthService,
     DataService,
-    HttpService
+    HttpService,
   ], // added AuthGuard & AuthService here; hoping to fix injector error
   bootstrap: [AppComponent] // ID's the root module that angular should bootstrap when it starts the application
 })

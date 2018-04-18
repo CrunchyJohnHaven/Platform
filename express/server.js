@@ -31,37 +31,43 @@ let PostSchema = new Schema({
   email: {
     type: String
   },
-  comment: {
+  phone_number: {
+    type: String
+  },
+  company: {
+    type: String
+  },
+  message: {
     type: String
   }
 }, { timestamps: true });
 
 
-Post = mongoose.model('Product', PostSchema);
+Post = mongoose.model('Contact', PostSchema);
 
-app.get('/post', function (req, res) {
-  console.log('****** Get ALL POSTS - ******');
-  Post.find({}, function (err, data) {
-    if (err) {
-      // console.log(' ******* ERROR at GET ALL route ****** : ', data);
-      res.json({ message: "Error", error: err });
-    } else {
-      console.log(' ******* SUCCESS at GET ALL route ****** : ', data);
-      res.json({ message: "Success", data: data });
-    }
-  })
-});
+// app.get('/post', function (req, res) {
+//   console.log('****** Get ALL POSTS - ******');
+//   Post.find({}, function (err, data) {
+//     if (err) {
+//       // console.log(' ******* ERROR at GET ALL route ****** : ', data);
+//       res.json({ message: "Error", error: err });
+//     } else {
+//       console.log(' ******* SUCCESS at GET ALL route ****** : ', data);
+//       res.json({ message: "Success", data: data });
+//     }
+//   })
+// });
 
 app.post('/post', function (req, res) {
-  console.log('****** POST COMMENT - ******');
-  var post = new Post({ first_name: req.body.first_name, last_name: req.body.last_name, email: req.body.email, comment: req.body.comment });
+  console.log('****** POST CONTACT - ******', req.body);
+  var post = new Post({ first_name: req.body.firstName, last_name: req.body.lastName, email: req.body.email, phone_number: req.body.phoneNumber, company: req.body.company, message: req.body.message });
   post.save(function (err, data) {
     if (err) {
       console.log("ERRORS at POST route.js: ", err);
       res.json({ message: "Error", error: err });
     } else {
       res.json({ message: "Success", data: data });
-      console.log('****** SERVER - POST PRODUCT: ', data)
+      console.log('****** SERVER - POST CONTACT: ', data)
     }
   });
 });
@@ -77,19 +83,39 @@ app.listen(port, function () {
 
 
 
-// {
-//     "first_name": "John",
-//     "Last_name": "Bradley",
-//     "email": "johnhavenbradley@gmail.com",
-//     "comment": "This is a comment"
-// }
 
-// {
-//     "message": "Success",
-//     "data": {
-//         "_id": "5ac2af28937ec8daf6cb1977",
-//         "createdAt": "2018-04-02T22:31:04.992Z",
-//         "updatedAt": "2018-04-02T22:31:04.992Z",
-//         "__v": 0
-//     }
-// }
+// https://app.sendgrid.com/guide/integrate/langs/nodejs
+// "sappercodinglogin" 
+// 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
+// https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=689467884&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+
+// echo "export SENDGRID_API_KEY='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'" > sendgrid.env
+// echo "sendgrid.env" >> .gitignore
+// source ./sendgrid.env
+
+// firebase functions:config:set sendgrid.key=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
+// using SendGrid's v3 Node.js Library
+// https://github.com/sendgrid/sendgrid-nodejs
+// const sgMail = require('@sendgrid/mail');
+// sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+// const msg = {
+//   to: 'test@example.com',
+//   from: 'test@example.com',
+//   subject: 'Sending with SendGrid is Fun',
+//   text: 'and easy to do anywhere, even with Node.js',
+//   html: '<strong>and easy to do anywhere, even with Node.js</strong>',
+// };
+// sgMail.send(msg);
+
+
+    // const sgMail = require('@sendgrid/mail');
+    // sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+    // const msg = {
+    //   to: 'johnhavenbradley@sappercoding.com',
+    //   from: 'johnhavenbradley@gmail.com',
+    //   subject: 'New Contact Request From SCoding',
+    //   text: 'First Name: {{newContact.firstName}} Last Name: {{newContact.lastName}}',
+    //   html: '<strong>First Name: {{newContact.firstName}} Last Name: {{newContact.lastName}}</strong>',
+    // };
+    // sgMail.send(msg);
+    // // return this._http.post('/contact', newContact);

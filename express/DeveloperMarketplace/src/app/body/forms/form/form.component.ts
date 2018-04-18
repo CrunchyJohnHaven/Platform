@@ -12,19 +12,16 @@ export class FormComponent implements OnInit {
   newContact: any;
 
 
-  constructor(private _httpService: HttpService) {this.newContact = {firstName: 'John', lastName:
-'Bradley'} }
+  constructor(private _httpService: HttpService) { }
 
   ngOnInit() {
 
-    console.log("onInit")
-    console.log("newContact: ", this._httpService.newContact)
   }
-  onSubmit() {
-    let observable = this._httpService.newContact(this.newContact)
-    observable.subscribe(data=> {
-    })
-    console.log("onSubmit")
-    this.newContact = ''
-  }
+  // onSubmit() {
+  //   let observable = this._httpService.newContact(this.newContact)
+  //   observable.subscribe(data=> {
+  //   })
+  //   console.log("onSubmit")
+  //   this.newContact = ''
+  // }
 }
