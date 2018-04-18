@@ -10,26 +10,27 @@ a {
     width: 100%;
 }
 .navIcon {
-    background-image: url('../../../assets/sapperNav.svg');
-    left: -5.49vw;
-    width: 179px;
-    top: 8%;
-    left: auto;
-    min-width: 179px;
-    min-height: 56px;
-    background-repeat: no-repeat;
+    min-width: 12vw;
+    min-height: 8vh;
+    padding: 4px;
+
+}
+
+.navIconImg {
+    position: relative;
 }
 
 .main_nav_block {
     background-color: #1f2022;
     color: #fff;
-    height: 4.5vw;
+    height: 8vh;
     padding: 0px 3vw 0px 0px;
     position: fixed;
     text-align: right;
     top: 0px;
     z-index: 9999;
     width: 100%;
+    min-height: 12vh;
 }
 .nav_option_block {
     height: 3.94vw;
