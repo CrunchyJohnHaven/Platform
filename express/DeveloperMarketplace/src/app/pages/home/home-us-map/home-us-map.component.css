@@ -1,4 +1,4 @@
-
+/* 
 Pitch Element
 .page_data_carrier {
     position: relative;
@@ -139,11 +139,9 @@ h6 {
     transition: all 0.2s ease-out;
     position: relative;
 }
-.stack_name {
-    color: #fffd54;
-}
+
 .page_data_carrier #local_job_demand .upper_container #stack_list .stack_item > div > span.icon_block .stack_icon:before {
-    position: absolute;
+    position: initial!important;
     top: 0px;
     content: '';
     height: 100%;
@@ -157,7 +155,7 @@ h6 {
 .lower_container {
     background-color: #F4F4F4;
         padding: 80px;
-        position: relative;
+        position: initial!important;
         transition: all 0.2s ease-out;
     }
     .stack_tab_container {
@@ -211,4 +209,7 @@ h6 {
         height: 48px;
     }
     
-    
+     */
+     img {
+         width: 100%;
+     }

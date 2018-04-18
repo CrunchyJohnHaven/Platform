@@ -1,8 +1,22 @@
 .container-fluid {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    padding-top: 50px;
     background-color: #272733;
+    padding-bottom: 50px;
 }
 label {
     color: white!important;
+}
+p {
+    color: white!important;
+}
+col-md-6 {
+    position: absolute!important;
+    overflow-y: scroll!important;
+}
+/* .form-group {
+    width: 40%;
+    margin-right: 10px;
+} */
+.col-md-6 {
+    position: initial!important;
 }

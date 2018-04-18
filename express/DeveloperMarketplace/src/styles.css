@@ -2,7 +2,7 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~font-awesome/css/font-awesome.css";
 
-/* BUTTONS */
+BUTTONS
 .cta_btns {
     display: inline-block;
     margin: 0px 0px 0px 1.39vw;
@@ -46,9 +46,6 @@
     padding-bottom: 0.55vw;
     padding-left: 0px;
 }
-/* END BUTTONS */
-
-/* MAIN ELEMENT STYLINGS */
 html {
     font-size: 10px;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
