@@ -362,7 +362,7 @@ var auth_service_1 = __webpack_require__("./src/app/services/auth.service.ts");
 var auth_guard_service_1 = __webpack_require__("./src/app/services/auth-guard.service.ts");
 var data_service_1 = __webpack_require__("./src/app/services/data.service.ts");
 var map_component_1 = __webpack_require__("./src/app/body/map/map.component.ts");
-var http_1 = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
+var http_1 = __webpack_require__("./node_modules/@angular/common/esm5/http.js"); /// <--- here
 var core_2 = __webpack_require__("./node_modules/@agm/core/index.js");
 var intro_learning_component_1 = __webpack_require__("./src/app/pages/learning-platform/intro-learning/intro-learning.component.ts");
 var no_quit_callout_component_1 = __webpack_require__("./src/app/pages/learning-platform/no-quit-callout/no-quit-callout.component.ts");
@@ -453,7 +453,7 @@ var AppModule = /** @class */ (function () {
                 auth_guard_service_1.AuthGuard,
                 auth_service_1.AuthService,
                 data_service_1.DataService,
-                http_service_1.HttpService
+                http_service_1.HttpService,
             ],
             bootstrap: [app_component_1.AppComponent] // ID's the root module that angular should bootstrap when it starts the application
         })
@@ -804,7 +804,7 @@ module.exports = ".form {\n  width: 100%;\n  background: #1e5799; /* Old browser
 /***/ "./src/app/body/forms/form-web/form-web.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"form\">\n      <h4>Request a FREE QUOTE</h4>\n      <form>\n        <div class=\"form-group\">\n          <label for=\"firstName\">First Name</label>\n          <input type=\"text\" class=\"form-control\" id=\"firstName\">\n        </div>\n        <div class=\"form-group\">\n          <label for=\"lastName\">Last Name</label>\n          <input type=\"text\" class=\"form-control\" id=\"lastName\">\n        </div>\n\n        <div class=\"form-group\">\n          <label for=\"lastName\">Email</label>\n          <input type=\"text\" class=\"form-control\" id=\"email\">\n        </div>\n        <br>\n        <div class=\"form-group\">\n          <label for=\"phoneNumber\">Phone Number</label>\n          <input type=\"text\" class=\"form-control\" id=\"phoneNumber\">\n        </div>\n        <div class=\"form-group\">\n            <label for=\"company\">Company</label>\n            <input type=\"text\" class=\"form-control\" id=\"company\">\n          </div>\n        <br>\n        <div class=\"form-group-message\">\n          <label for=\"message\">Message</label>\n          <br>\n          <input name=\"message\" rows=\"10\" cols=\"30\" class=\"form-control\" id=\"message\">\n        </div>\n        <br>\n        <button type=\"submit\" class=\"btn btn-success\">Submit</button>\n      </form>\n  </div>"
+module.exports = "<div class=\"form\">\n      <h4>Request a FREE QUOTE</h4>\n      <form (submit)=\"submitContact()\" #form_data=\"ngForm\">\n        <!-- {{ newContact | json }} -->\n        <!-- <br> -->\n        <div class=\"form-group\">\n          <label for=\"firstName\">First Name</label>\n          <input type=\"text\" class=\"form-control\" id=\"firstName\" name=\"newContact.firstName\" [(ngModel)]=\"newContact.firstName\" required>\n        </div>\n        <div class=\"form-group\">\n          <label for=\"lastName\">Last Name</label>\n          <input type=\"text\" class=\"form-control\" id=\"lastName\" name=\"newContact.lastName\" [(ngModel)]=\"newContact.lastName\" required>\n        </div>\n\n        <div class=\"form-group\">\n          <label for=\"lastName\">Email</label>\n          <input type=\"text\" class=\"form-control\" id=\"email\" name=\"newContact.email\" [(ngModel)]=\"newContact.email\" required>\n        </div>\n        <br>\n        <div class=\"form-group\">\n          <label for=\"phoneNumber\">Phone Number</label>\n          <input type=\"text\" class=\"form-control\" id=\"phoneNumber\" name=\"newContact.phoneNumber\" [(ngModel)]=\"newContact.phoneNumber\">\n        </div>\n        <div class=\"form-group\">\n            <label for=\"company\">Company</label>\n            <input type=\"text\" class=\"form-control\" id=\"company\" name=\"newContact.company\" [(ngModel)]=\"newContact.company\">\n          </div>\n        <br>\n        <div class=\"form-group-message\">\n          <label for=\"message\">Message</label>\n          <br>\n          <input name=\"message\" rows=\"10\" cols=\"30\" class=\"form-control\" id=\"message\" name=\"newContact.message\" [(ngModel)]=\"newContact.message\">\n        </div>\n        <br>\n        <button type=\"submit\" [disabled]=\"form_data.form.invalid\" class=\"btn btn-success\">Submit</button>\n      </form>\n  </div>"
 
 /***/ }),
 
@@ -824,22 +824,56 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var http_service_1 = __webpack_require__("./src/app/services/http.service.ts");
+var router_1 = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
 var FormWebComponent = /** @class */ (function () {
-    function FormWebComponent() {
+    function FormWebComponent(_httpService, _router) {
+        this._httpService = _httpService;
+        this._router = _router;
+        this.errors = {};
+        this.newContact = { firstName: '',
+            lastName: '',
+            email: '',
+            phoneNumber: '',
+            company: '',
+            message: '' };
     }
+    // private http: Http
     FormWebComponent.prototype.ngOnInit = function () {
+    };
+    FormWebComponent.prototype.home = function () {
+        console.log('***** NEW - home() ******');
+        this._router.navigate(['/']);
+    };
+    FormWebComponent.prototype.submitContact = function () {
+        this._httpService.newContact(this.newContact);
+        // observable.subscribe(data => {
+        //   if('error' in data) {
+        //     this.errorsRend(data);
+        //   } else {
+        //     this.home();
+        //   }
+        // });
+    };
+    FormWebComponent.prototype.errorsRend = function (data) {
+        this.errors = this._httpService.renderErrors(data);
+        console.log('THIS.ERRORS: ', this.errors);
     };
     FormWebComponent = __decorate([
         core_1.Component({
             selector: 'app-form-web',
             template: __webpack_require__("./src/app/body/forms/form-web/form-web.component.html"),
-            styles: [__webpack_require__("./src/app/body/forms/form-web/form-web.component.css")]
+            styles: [__webpack_require__("./src/app/body/forms/form-web/form-web.component.css")],
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [http_service_1.HttpService, router_1.Router])
     ], FormWebComponent);
     return FormWebComponent;
 }());
 exports.FormWebComponent = FormWebComponent;
+// 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
+// echo "sendgrid.env" >> .gitignore
+// source ./sendgrid.env
+// npm install --save @sendgrid/client
 
 
 /***/ }),
@@ -878,18 +912,8 @@ var http_service_1 = __webpack_require__("./src/app/services/http.service.ts");
 var FormComponent = /** @class */ (function () {
     function FormComponent(_httpService) {
         this._httpService = _httpService;
-        this.newContact = { firstName: 'John', lastName: 'Bradley' };
     }
     FormComponent.prototype.ngOnInit = function () {
-        console.log("onInit");
-        console.log("newContact: ", this._httpService.newContact);
-    };
-    FormComponent.prototype.onSubmit = function () {
-        var observable = this._httpService.newContact(this.newContact);
-        observable.subscribe(function (data) {
-        });
-        console.log("onSubmit");
-        this.newContact = '';
     };
     FormComponent = __decorate([
         core_1.Component({
@@ -3181,6 +3205,7 @@ var http_1 = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
 var HttpService = /** @class */ (function () {
     function HttpService(_http) {
         this._http = _http;
+        this.errors = {};
         this.projectInfo = [
             {
                 title: 'TheAmericanElement.com',
@@ -3214,8 +3239,15 @@ var HttpService = /** @class */ (function () {
         return this.socialMediaInfo;
     };
     HttpService.prototype.newContact = function (newContact) {
-        console.log('addContact http');
-        return this._http.post('/contact', newContact);
+        console.log('addContact http', newContact);
+        this._http.post('/post', newContact);
+    };
+    HttpService.prototype.renderErrors = function (data) {
+        console.log('*** SERVICE - renderErrors() ****');
+        var errors = {};
+        if ('name' in data.error.errors) {
+            errors['name'] = data.error.errors.name.message;
+        }
     };
     HttpService = __decorate([
         core_1.Injectable(),
