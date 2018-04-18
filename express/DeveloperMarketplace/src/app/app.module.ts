@@ -139,6 +139,7 @@ import { HomeTeamLeadsComponent } from './pages/home/home-team-leads/home-team-l
 
   ],
   providers: [
+    // AngularFirestore,
     AuthGuard,
     AuthService,
     DataService,

@@ -1,0 +1,43 @@
+.col-md-8 {
+    width: 47.666667%;
+    padding: 3%;
+}
+.col-md-6 {
+    background-color: inherit;
+    color: black;
+    padding: 3%;
+}
+.quit-container {
+    background-color: #272733;
+    color: #fff;
+    height: fit-content;
+    padding: 0px;
+    position: relative;
+    text-align: right;
+    top: 0vw;
+    display: -webkit-box;
+    z-index: 9999;
+    width: 100%;
+}
+.row {
+    height: 23vw;
+    background: inherit;
+    color: gold;
+}
+.image {
+    height: 23vw;
+    background: white;
+    background-image: url('../../../../assets/Learning1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -69px;
+}
+.row h2 {
+    margin-top: 19%;
+}
+p {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
