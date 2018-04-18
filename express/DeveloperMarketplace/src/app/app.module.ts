@@ -68,6 +68,7 @@ import { ConsultationComponent } from './body/consultation/consultation.componen
 import { HomeOperatesComponent } from './pages/home/home-operates/home-operates.component';
 import { HomeTeamLeadsComponent } from './pages/home/home-team-leads/home-team-leads.component';
 import { ShowcaseComponent } from './pages/web-design/showcase/showcase.component';
+import { HomeUsMapComponent } from './pages/home/home-us-map/home-us-map.component';
 // import { NgStyle } from '@angular/common';
 
 @NgModule({ // annotated decorator for root module AppModule
@@ -122,7 +123,8 @@ import { ShowcaseComponent } from './pages/web-design/showcase/showcase.componen
     ConsultationComponent,
     HomeOperatesComponent,
     HomeTeamLeadsComponent,
-    ShowcaseComponent
+    ShowcaseComponent,
+    HomeUsMapComponent
   ],
   imports: [ // The other angular modules that export material we need in this module
     BrowserModule, // All bits and pieces to run our app in the browser

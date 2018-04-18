@@ -41,7 +41,7 @@ export class HttpService {
   }
   newContact(newContact) {
     console.log('addContact http', newContact);
-    this._http.post('/post', newContact);
+    return this._http.post('/post', newContact);
   }
   renderErrors(data) {
     console.log('*** SERVICE - renderErrors() ****');
