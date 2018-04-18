@@ -15,7 +15,7 @@
 .ui.labeled.input .label {
   font-weight: normal;
   align-self: center;
-  font-size: 12px;
+  font-size: 1vw;
   margin: @2px;
   border-radius: @borderRadius !important;
   padding: @relative5px @relative8px !important;

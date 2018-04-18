@@ -9,7 +9,7 @@
     vertical-align: middle;
 }
 .cta_btns>a {
-    width: 120px;
+    width: 7.5vw;
     display: inline-block;
     font-style: normal !important;
     font-variant-ligatures: normal !important;
@@ -18,7 +18,7 @@
     font-variant-east-asian: normal !important;
     font-weight: bold !important;
     font-stretch: normal !important;
-    font-size: 16px !important;
+    font-size: 0.9vw !important;
     line-height: 20px !important;
     font-family: ProximaNova-Light, tahoma, verdana, arial, sans-serif !important;
     text-decoration: none !important;
@@ -40,8 +40,8 @@
 .cta_blue_btn_light {
     color: #06aae2 !important;
     background-color: transparent;
-    border: 1px solid #06aae2;
-    padding-top: 8px;
+    border: 0.0704vw solid #06aae2;
+    padding-top: 0.563vw;
     padding-right: 0px;
     padding-bottom: 8px;
     padding-left: 0px;
@@ -111,8 +111,8 @@ h3 {
     font-variant-east-asian: normal;
     font-weight: normal;
     font-stretch: normal;
-    font-size: 42px;
-    line-height: 50px;
+    font-size: 2.959vw;
+    line-height: 3.52vw;
     font-family: ProximaNova-Bold, tahoma, verdana, arial, sans-serif;
 }
 
