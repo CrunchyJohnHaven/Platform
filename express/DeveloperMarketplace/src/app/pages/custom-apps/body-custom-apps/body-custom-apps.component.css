@@ -1,5 +1,20 @@
-.webIcons {
-    width: 200px;
-    height: 100px;
-    background-color: blue;
+.web-cont-class {
+    padding-top: 2vw;
+    display: flex;
+}
+.left-content {
+    width: 66%;
+    display: flex;
+}
+.web-form {
+    display: inline-block;
+    width:30%
+}
+.web-col1 {
+width: 30vw;
+margin-right: 1vw;
+}
+.web-col2 {
+width: 30vw;
+margin-right: 1vw;
 }
