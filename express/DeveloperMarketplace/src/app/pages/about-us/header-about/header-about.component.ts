@@ -7,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderAboutComponent implements OnInit {
   title: string;
-  subtitle: string; 
+  subtitle: string;
   constructor() {
-    this.title = "About Sapper Coding"
-    this.subtitle = "A bridge between military and technological excellence"
+    this.title = 'About Sapper Coding';
+    this.subtitle = 'A bridge between military and technological excellence';
   }
   ngOnInit() {
   }

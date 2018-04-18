@@ -71,6 +71,23 @@ app.post('/post', function (req, res) {
     }
   });
 });
+// ****** POST CONTACT - ****** { firstName: 'aaaa',
+//   lastName: 10,
+//   email: 'jhb',
+//   phoneNumber: '111',
+//   company: 'sapper!',
+//   message: 'Helloooo!' }
+// ****** SERVER - POST CONTACT:  { _id: 5ad7a4ef5cb9220a466f8191,
+//   first_name: 'aaaa',
+//   last_name: '10',
+//   email: 'jhb',
+//   phone_number: '111',
+//   company: 'sapper!',
+//   message: 'Helloooo!',
+//   createdAt: 2018-04-18T20:05:03.011Z,
+//   updatedAt: 2018-04-18T20:05:03.011Z,
+//   __v: 0 }
+
 
 app.all('*', (req, res, next) => {
   res.sendFile(path.resolve('./DeveloperMarketplace/dist/index.html'));
