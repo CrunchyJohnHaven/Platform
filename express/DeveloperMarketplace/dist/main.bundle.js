@@ -2392,7 +2392,7 @@ module.exports = "#intro-learning {\n    margin-top: 12vh;\n}\n\n.learningpage {
 /***/ "./src/app/pages/learning-platform/learning-platform.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n  <div class='learningpage'>\n    <div id='intro-learning' class='container-fluid'>\n    <app-intro-learning></app-intro-learning>\n  </div>\n  <hr class='my-4'>\n  <div id='no-quit-callout' class='container-fluid'>\n    <app-no-quit-callout></app-no-quit-callout>\n  </div>\n  <hr class='my-4'>\n\n  <div id='info-request-form' class='container-fluid'>\n    <app-info-request-form></app-info-request-form>\n  </div>\n  <hr class='my-4'>\n\n  <div id='learn-online-more-info' class='container-fluid'>\n    <app-learn-online-more-info></app-learn-online-more-info>\n  </div>\n  <hr class='my-4'>\n\n  <div id='about-us-different' class='container-fluid'>\n    <app-about-us-different></app-about-us-different>\n  </div>\n  <hr class='my-4'>\n\n  <div id='mission-login' class='container-fluid'>\n    <app-mission-login></app-mission-login>\n  </div></div>"
+module.exports = "<hr class='my-4'>\n  <div class='learningpage'>\n    <div id='intro-learning' class='container-fluid'>\n    <app-intro-learning></app-intro-learning>\n  </div>\n  <hr class='my-4'>\n  <div id='no-quit-callout' class='container-fluid'>\n    <app-no-quit-callout></app-no-quit-callout>\n  </div>\n  <hr class='my-4'>\n\n  <div id='info-request-form' class='container-fluid'>\n    <app-info-request-form></app-info-request-form>\n  </div>\n  <hr class='my-4'>\n\n  <div id='learn-online-more-info' class='container-fluid'>\n    <app-learn-online-more-info></app-learn-online-more-info>\n  </div>\n  <hr class='my-4'>\n\n  <div id='about-us-different' class='container-fluid'>\n    <app-about-us-different></app-about-us-different>\n  </div>\n  <hr class='my-4'>\n\n  <div id='mission-login' class='container-fluid'>\n    <app-mission-login></app-mission-login>\n  </div></div>"
 
 /***/ }),
 
@@ -2530,7 +2530,7 @@ module.exports = ".col-md-8 {\n    width: 47.666667%;\n    padding: 3%;\n}\n.col
 /***/ "./src/app/pages/learning-platform/no-quit-callout/no-quit-callout.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n<div class=\"jumbotron jumbotron-fluid\">\n  <div class=\"col-md-6\">\n    <div class=\"container\">\n      <h2>For Those With No Quit In Them</h2>\n      <p>A great programmer once said:<br><br>\n        \"Don't ever ask if it's possible to code something. When you're good enough, you can create anything you can imagine. Coding is freedom, it's as simple as that.\"\n      </p>\n    </div>\n  </div>\n    <img class='col-md-4' src='../../../../assets/Learning1.jpg' alt=\"\">\n\n</div>"
+module.exports = "\n<div class=\"jumbotron jumbotron-fluid\">\n    <div class=\"container\">\n      <h2>For Those With No Quit In Them</h2>\n      <p>A great programmer once said:<br><br>\n        \"Don't ever ask if it's possible to code something. When you're good enough, you can create anything you can imagine. Coding is freedom, it's as simple as that.\"\n      </p>\n      <img class='col-md-4' src='../../../../assets/Learning1.jpg' alt=\"\">\n    </div>\n\n\n</div>"
 
 /***/ }),
 
