@@ -375,6 +375,7 @@ var mobile_portfolio_component_1 = __webpack_require__("./src/app/body/mobile-po
 var consultation_component_1 = __webpack_require__("./src/app/body/consultation/consultation.component.ts");
 var home_operates_component_1 = __webpack_require__("./src/app/pages/home/home-operates/home-operates.component.ts");
 var home_team_leads_component_1 = __webpack_require__("./src/app/pages/home/home-team-leads/home-team-leads.component.ts");
+var showcase_component_1 = __webpack_require__("./src/app/pages/web-design/showcase/showcase.component.ts");
 // import { NgStyle } from '@angular/common';
 var AppModule = /** @class */ (function () {
     function AppModule() {
@@ -431,7 +432,8 @@ var AppModule = /** @class */ (function () {
                 mobile_portfolio_component_1.MobilePortfolioComponent,
                 consultation_component_1.ConsultationComponent,
                 home_operates_component_1.HomeOperatesComponent,
-                home_team_leads_component_1.HomeTeamLeadsComponent
+                home_team_leads_component_1.HomeTeamLeadsComponent,
+                showcase_component_1.ShowcaseComponent
             ],
             imports: [
                 platform_browser_1.BrowserModule,
@@ -645,14 +647,14 @@ exports.AboutmeComponent = AboutmeComponent;
 /***/ "./src/app/body/consultation/consultation.component.css":
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "\n.consultation {\n    padding-top: 0.1vw;\n    font-color: white;\n    width: 100%;\n    min-height: 23vw;\n    text-align: center;\n    background: #1e5799; /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */\n    background: -webkit-gradient(linear, left top, left bottom, from(#1e5799),color-stop(50%, #2989d8),color-stop(51%, #207cca),to(#7db9e8));\n    background: linear-gradient(to bottom, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */\n    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */\n      background-size: cover;\n  }\n    h2 {\n      margin-top: 5vw;\n      padding-top: 1vw;\n      padding-bottom: 1vw;\n      color: white;\n      font-size: 18px;\n  }\n    label {\n    display: inline-block;\n  }\n    .form-group {\n    margin-bottom: 15px;\n    display: inline-block;\n    width: 31vw;\n    -ms-flex-line-pack: left;\n        align-content: left;\n    }\n    .form-control {\n    display: block;\n    width: 90%;\n    height: 34px;\n    font-size: 14px;\n    line-height: 1.42857143;\n    color: #272733;\n    background-color: #fff;\n    background-image: none;\n    border: 1px solid #ccc;\n    border-radius: 4px;\n  }\n    .form-group-message {\n    width: 100%;\n  }\n    form {\n    padding: 1vw\n  }\n    .cta_green_btn {\n    background-color: #9ac731;\n    font-size: 0.8vw;\n    padding-top: 0.8vw;\n    padding-bottom: 0.8vw;\n    padding-left: 1vw;\n    padding-right: 1vw;\n    margin-bottom: 4vw;\n  }\n    p {\n    color: white;\n  }"
 
 /***/ }),
 
 /***/ "./src/app/body/consultation/consultation.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  consultation works!\n</p>\n"
+module.exports = "<div class=\"consultation\">\n  <h2>SCHEDULE A FREE CONSULTATION</h2>\n  <br>\n  <p>With a full team of Sapper marketing and development experts at your disposal, anthing is possible</p>\n  <br>\n  <a routerLink=\"/contact\" class=\"contact_us_button cta_green_btn\">Contact Us</a>\n  </div>"
 
 /***/ }),
 
@@ -795,14 +797,14 @@ exports.FormFreeQuoteComponent = FormFreeQuoteComponent;
 /***/ "./src/app/body/forms/form-web/form-web.component.css":
 /***/ (function(module, exports) {
 
-module.exports = ".form-request-work {\n    background-color: black;\n    width: 22rem;\n    min-height: 12rem;\n  }\n  body {\n    width: 25%;\n    margin-left: 36%;\n  \n  }\n"
+module.exports = ".form {\n  width: 100%;\n  background: #1e5799; /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */\n  background: -webkit-gradient(linear, left top, left bottom, from(#1e5799),color-stop(50%, #2989d8),color-stop(51%, #207cca),to(#7db9e8));\n  background: linear-gradient(to bottom, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */\n  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */\n    background-size: cover;\n}\n  form {\n    display: inline-block;\n\n  }\n  h4 {\n    padding-top: 1vw;\n    padding-bottom: 1vw;\n    font-size: 18px;\n    text-align: center;\n}\n  label {\n  display: inline-block;\n}\n  .form-group {\n  margin-bottom: 15px;\n  display: inline-block;\n  width: 31vw;\n  -ms-flex-line-pack: left;\n      align-content: left;\n  }\n  .form-control {\n  display: block;\n  width: 90%;\n  height: 34px;\n  font-size: 14px;\n  line-height: 1.42857143;\n  color: #272733;\n  background-color: #fff;\n  background-image: none;\n  border: 1px solid #ccc;\n  border-radius: 4px;\n}\n  .form-group-message {\n  width: 100%;\n}\n  form {\n  padding: 1vw\n}"
 
 /***/ }),
 
 /***/ "./src/app/body/forms/form-web/form-web.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"form\">\n    <div class=\"card card-block\">\n      <h4 class=\"card-title\">How can we help?</h4>\n      <br><br>\n      <form>\n        <div class=\"form-group\">\n          <label for=\"firstName\">First Name</label>\n          <input type=\"text\" class=\"form-control\" id=\"firstName\">\n        </div>\n        <div class=\"form-group\">\n          <label for=\"lastName\">Last Name</label>\n          <input type=\"text\" class=\"form-control\" id=\"lastName\">\n        </div>\n        <div class=\"form-group\">\n          <label for=\"lastName\">Email</label>\n          <input type=\"text\" class=\"form-control\" id=\"email\">\n        </div>\n        <div class=\"form-group\">\n          <label for=\"phoneNumber\">Phone Number</label>\n          <input type=\"text\" class=\"form-control\" id=\"phoneNumber\">\n        </div>\n        <div class=\"form-group\">\n          <label for=\"message\">Tell us about your project?</label>\n          <textarea name=\"message\" rows=\"10\" cols=\"30\" class=\"form-control\" id=\"message\"></textarea>\n        </div>\n        <button type=\"submit\" class=\"btn btn-success\">Submit</button>\n      </form>\n  </div>\n</div>"
+module.exports = "<div class=\"form\">\n      <h4>Request a FREE QUOTE</h4>\n      <form>\n        <div class=\"form-group\">\n          <label for=\"firstName\">First Name</label>\n          <input type=\"text\" class=\"form-control\" id=\"firstName\">\n        </div>\n        <div class=\"form-group\">\n          <label for=\"lastName\">Last Name</label>\n          <input type=\"text\" class=\"form-control\" id=\"lastName\">\n        </div>\n\n        <div class=\"form-group\">\n          <label for=\"lastName\">Email</label>\n          <input type=\"text\" class=\"form-control\" id=\"email\">\n        </div>\n        <br>\n        <div class=\"form-group\">\n          <label for=\"phoneNumber\">Phone Number</label>\n          <input type=\"text\" class=\"form-control\" id=\"phoneNumber\">\n        </div>\n        <div class=\"form-group\">\n            <label for=\"company\">Company</label>\n            <input type=\"text\" class=\"form-control\" id=\"company\">\n          </div>\n        <br>\n        <div class=\"form-group-message\">\n          <label for=\"message\">Message</label>\n          <br>\n          <input name=\"message\" rows=\"10\" cols=\"30\" class=\"form-control\" id=\"message\">\n        </div>\n        <br>\n        <button type=\"submit\" class=\"btn btn-success\">Submit</button>\n      </form>\n  </div>"
 
 /***/ }),
 
@@ -1584,7 +1586,7 @@ module.exports = ".web-cont-class {\n    padding-top: 2vw;\n    display: -webkit
 /***/ "./src/app/pages/custom-apps/body-custom-apps/body-custom-apps.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!DOCTYPE html>\n<html>\n    <head>\n    </head>\n    <body>\n      <div class=\"web-cont-class\">\n          <div class=\"left-content\">\n            <div class=\"web-col1\">\n              <h2>{{title1}}</h2>\n              <br><br>\n              <p>{{text1a}}</p>\n              <br>\n              <p>{{text1b}}</p>\n              <br>\n              <p>{{text1c}}</p>\n            </div>\n            <br>\n            <div class=\"web-col2\">\n              <h2>{{title2}}</h2>\n              <br><br>\n              <p>{{text2a}}</p>\n              <br>\n              <p>{{text2b}}</p>\n            </div>\n          </div>\n          <div class=\"web-form\">\n              <app-form-web></app-form-web>\n          </div>\n      </div>\n      <app-resume></app-resume>\n    </body>\n</html>\n"
+module.exports = "<h2>SILICON VALLEY WEB SERVICES AT THEIR FINEST</h2>\n<p>Our developers create interactive web experiences using the latest technologies, ensuring they deploy on movile, desktop, and tablets</p>\n<h2>E-Commerce</h2>\n<p>We build high-performance websites that convery visitors into customers</p>\n<h2>TECHNOLOGIES WE USE</h2>\n<h2>CREATIVE WEB DESIGN</h2>\n<p>Drawing on Silicon Valley's best practices, we design for the user while having a business objective in mind. We employ best practices and design principles to build websites that are aesthetically pleasing and deliver rewarding results.</p>\n<h2>The Teaching Hospital of Web Design for Those Who Serve</h2>\n<p>With marketing strategy, design, and development partnerships throughout Silicon Valley, our projects are completed on-time, to spec, and to the highest standard.</p>\n<h2>Great Service From Those Who Serve</h2>\n<p>We know hoe to accomplish</p>\n  <div class=\"web-form\">\n    <app-form-web></app-form-web>\n  </div>\n<app-resume></app-resume>\n"
 
 /***/ }),
 
@@ -1895,7 +1897,7 @@ module.exports = ""
 /***/ "./src/app/pages/home/home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!DOCTYPE html>\n<html>\n  <head>\n  </head>\n  <body>\n    <app-header></app-header>\n    <app-portfolio-container></app-portfolio-container>\n    <app-home-operates></app-home-operates>\n    <app-home-team-leads></app-home-team-leads>\n  </body>\n</html>\n    "
+module.exports = "<app-header></app-header>\n<app-portfolio-container></app-portfolio-container>\n<app-home-operates></app-home-operates>\n<app-home-team-leads></app-home-team-leads>\n\n"
 
 /***/ }),
 
@@ -2728,7 +2730,7 @@ module.exports = ".web-cont-class {\n    padding-top: 2vw;\n    display: -webkit
 /***/ "./src/app/pages/web-design/body-web/body-web.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!DOCTYPE html>\n<html>\n    <head>\n    </head>\n    <body>\n\n      <div class=\"web-cont-class\">\n          <div class=\"left-content\">\n            <div class=\"web-col1\">\n              <h2>{{title1}}</h2>\n              <br><br>\n              <p>{{text1a}}</p>\n              <br>\n              <p>{{text1b}}</p>\n              <br>\n              <p>{{text1c}}</p>\n            </div>\n            <br>\n            <div class=\"web-col2\">\n              <h2>{{title2}}</h2>\n              <br><br>\n              <p>{{text2a}}</p>\n              <br>\n              <p>{{text2b}}</p>\n            </div>\n          </div>\n          <div class=\"web-form\">\n              <app-form-web></app-form-web>\n          </div>\n      </div>\n      <app-resume></app-resume>\n    </body>\n</html>\n"
+module.exports = "<h2>Responsive Websites</h2>\n<p>Our developers create interactive web experiences using the latest technologies, ensuring they deploy on mobile, desktop, and tablets.</p>\n<h2>E-Commerce</h2>\n<p>We build high-performance websites that convert visitors into customers</p>\n<h2>TECHNOLOGIES WE USE</h2>\n<div class=\"webIcons\"></div>\n<h2>Creative Web Design</h2>\n<p>Drawing on Silicon Valley's best practices, we design for the user while having a business objective in mind. We employ best practices and design principles to build websites that are aesthetically pleasing and deliver rewarding results.</p>\n<h2>The Teaching Hospital of Web Design for Those Who Serve</h2>\n<p>With marketing strategy, design, and development partnerships throughout Silicon Valley, our projects are completed on-time, to spec, and to the highest standard.</p>\n<h2>Great Service From Those Who Serve</h2>\n<p>We know how to accomplish your mission. Worl closely with a Sapper Coordinator and a Sapper Team Leader to build high-converting websites.</p>\n"
 
 /***/ }),
 
@@ -2780,14 +2782,14 @@ exports.BodyWebComponent = BodyWebComponent;
 /***/ "./src/app/pages/web-design/header-web/header-web.component.css":
 /***/ (function(module, exports) {
 
-module.exports = ".overlay {\n    position: absolute;\n    z-index: 1000;\n    height: -webkit-fit-content;\n    height: -moz-fit-content;\n    height: fit-content;\n    width: -webkit-fit-content;\n    width: -moz-fit-content;\n    width: fit-content;\n    background: #6F9FD8;\n    margin-top: 5%;\n    padding: 20px;\n    margin-left: 30%;\n    border-radius: 5px;\n}\n.overlay p {\n    padding: 15px;\n    margin: 0;\n    font-family: sans-serif;\n    font-size: 1vw;\n}\n.learning-content {\n    width: 100%;\n    height: 420px;\n    background:\n    -webkit-gradient(\n      linear, \n      left top, left bottom, \n      from(rgba(0,0,0,.5)), \n      to(rgba(0,0,0,.5))\n    ),\n    url('coverPhoto.9c2f0ebf77e21efe0e31.png') no-repeat;\n    background:\n    linear-gradient(\n      rgba(0,0,0,.5), \n      rgba(0,0,0,.5)\n    ),\n    url('coverPhoto.9c2f0ebf77e21efe0e31.png') no-repeat;\n    background-size: cover;\n    text-align: -webkit-center;\n}\n.title {\n    color: #feff00;\n    font-style: normal;\n    font-family: normal;\n    font-size: 4vw;\n    border-bottom: 1px solid #FFFFFF;\n    border-bottom-color: rgba(255,255,255,0.35);\n    display: inline-block;\n    \n}\n.subtitle {\n    font-size: 28px;\n    color: #feff00;\n    font-style: italic;\n    text-align: -webkit-center;\n  }"
+module.exports = ".overlay {\n    position: absolute;\n    z-index: 1000;\n    width: -webkit-fit-content;\n    width: -moz-fit-content;\n    width: fit-content;\n    background: transparent;\n    margin-top: 5%;\n    padding: 20px;\n    margin-left: 30%;\n    border-radius: 5px;\n    text-align: center;\n}\n.overlay p {\n    padding: 15px;\n    margin: 0;\n    font-family: sans-serif;\n    font-size: 1vw;\n}\n.learning-content {\n    width: 100%;\n    height: 420px;\n    background:\n    -webkit-gradient(\n      linear, \n      left top, left bottom, \n      from(rgba(0,0,0,.5)), \n      to(rgba(0,0,0,.5))\n    ),\n    url('coverPhoto.9c2f0ebf77e21efe0e31.png') no-repeat;\n    background:\n    linear-gradient(\n      rgba(0,0,0,.5), \n      rgba(0,0,0,.5)\n    ),\n    url('coverPhoto.9c2f0ebf77e21efe0e31.png') no-repeat;\n    background-size: cover;\n    text-align: -webkit-center;\n}\n.title {\n    color: #feff00;\n    font-style: normal;\n    font-family: normal;\n    font-size: 2vw;\n    border-bottom: 1px solid #FFFFFF;\n    border-bottom-color: rgba(255,255,255,0.35);\n    display: inline-block;\n    \n}\n.subtitle {\n    font-size: 28px;\n    color: #feff00;\n    font-style: italic;\n    text-align: -webkit-center;\n  }"
 
 /***/ }),
 
 /***/ "./src/app/pages/web-design/header-web/header-web.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!doctype html>\n<html>\n  <header>\n    <title>Sapper Learning</title>\n  </header>\n  <body>\n    <div class=\"overlay\">\n        <div class=\"title\">\n          Sapper Web Applications\n        </div>\n        <div class=\"subtitle\">\n          Modern Web Design With spec ops subtlety\n        </div>\n        \n      </div>    \n      <!-- Just some background image -->\n      <div class=\"learning-content\"></div>\n  </body>\n</html>\n"
+module.exports = "<!doctype html>\n<html>\n  <header>\n    <title>Sapper Learning</title>\n  </header>\n  <body>\n    <div class=\"overlay\">\n        <div class=\"title\">\n          SILICON VALLEY WEB DEVELOPMENT AT ITS FINEST\n        </div>\n        \n        <div class=\"subtitle\">\n          <br>\n          GROW YOUR BUSINESS WITH A SAPPER TEAM\n        </div>\n        \n      </div>    \n      <!-- Just some background image -->\n      <div class=\"learning-content\"></div>\n  </body>\n</html>\n"
 
 /***/ }),
 
@@ -2827,6 +2829,56 @@ exports.HeaderWebComponent = HeaderWebComponent;
 
 /***/ }),
 
+/***/ "./src/app/pages/web-design/showcase/showcase.component.css":
+/***/ (function(module, exports) {
+
+module.exports = ".showcase {\n     min-height: 10vw;\n}"
+
+/***/ }),
+
+/***/ "./src/app/pages/web-design/showcase/showcase.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"showcase\">\n  <h2>SHOWCASE OF OUR WORK</h2> \n</div>"
+
+/***/ }),
+
+/***/ "./src/app/pages/web-design/showcase/showcase.component.ts":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var ShowcaseComponent = /** @class */ (function () {
+    function ShowcaseComponent() {
+    }
+    ShowcaseComponent.prototype.ngOnInit = function () {
+    };
+    ShowcaseComponent = __decorate([
+        core_1.Component({
+            selector: 'app-showcase',
+            template: __webpack_require__("./src/app/pages/web-design/showcase/showcase.component.html"),
+            styles: [__webpack_require__("./src/app/pages/web-design/showcase/showcase.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], ShowcaseComponent);
+    return ShowcaseComponent;
+}());
+exports.ShowcaseComponent = ShowcaseComponent;
+
+
+/***/ }),
+
 /***/ "./src/app/pages/web-design/web-design.component.css":
 /***/ (function(module, exports) {
 
@@ -2837,7 +2889,7 @@ module.exports = ""
 /***/ "./src/app/pages/web-design/web-design.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!DOCTYPE html>\n<html>\n  <head>\n  </head>\n  <body>\n    <app-header-web></app-header-web>\n    <app-body-web></app-body-web>\n  </body>\n</html>"
+module.exports = "\n    <app-header-web></app-header-web>\n    <app-body-web></app-body-web>\n    <app-form-web></app-form-web>\n    <app-showcase></app-showcase>\n    <app-consultation></app-consultation>\n"
 
 /***/ }),
 

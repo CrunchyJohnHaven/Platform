@@ -1,10 +1,47 @@
-.form-request-work {
-    background-color: black;
-    width: 22rem;
-    min-height: 12rem;
+.form {
+  width: 100%;
+  background: #1e5799; /* Old browsers */
+  background: -moz-linear-gradient(top, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+    background-size: cover;
+}
+  form {
+    display: inline-block;
+
   }
-  body {
-    width: 25%;
-    margin-left: 36%;
-  
+  h4 {
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    font-size: 18px;
+    text-align: center;
+}
+
+label {
+  display: inline-block;
+}
+.form-group {
+  margin-bottom: 15px;
+  display: inline-block;
+  width: 31vw;
+  align-content: left;
   }
+.form-control {
+  display: block;
+  width: 90%;
+  height: 34px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #272733;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.form-group-message {
+  width: 100%;
+}
+form {
+  padding: 1vw
+}
