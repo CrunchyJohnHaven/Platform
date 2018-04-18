@@ -1,0 +1,8 @@
+.container-fluid {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #272733;
+}
+label {
+    color: white!important;
+}
