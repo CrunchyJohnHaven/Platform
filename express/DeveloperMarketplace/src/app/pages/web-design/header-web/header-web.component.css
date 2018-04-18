@@ -1,13 +1,13 @@
 .overlay {
     position: absolute;
     z-index: 1000;
-    height: fit-content;
     width: fit-content;
-    background: #6F9FD8;
+    background: transparent;
     margin-top: 5%;
     padding: 20px;
     margin-left: 30%;
     border-radius: 5px;
+    text-align: center;
 }
 .overlay p {
     padding: 15px;
@@ -31,7 +31,7 @@
     color: #feff00;
     font-style: normal;
     font-family: normal;
-    font-size: 4vw;
+    font-size: 2vw;
     border-bottom: 1px solid #FFFFFF;
     border-bottom-color: rgba(255,255,255,0.35);
     display: inline-block;
