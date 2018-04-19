@@ -11,7 +11,7 @@ import { FormComponent } from './body/./forms/form/form.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule, MatCheckboxModule } from '@angular/material';
 import { NavBarComponent } from './base-components/nav-bar/nav-bar.component';
-import { PortfolioComponent } from './pages/home/portfolio-container/portfolio/portfolio.component';
+import { PortfolioComponent } from './pages/home/portfolio/portfolio.component';
 import { PortfolioContainerComponent } from './pages/home/portfolio-container/portfolio-container.component';
 import { WorkFormContentComponent } from './body/./forms/work-form-content/work-form-content.component';
 import { FooterComponent } from './base-components/footer/footer.component';
