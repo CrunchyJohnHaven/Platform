@@ -1,4 +1,33 @@
-.operates-container {
-    background-color: #272733;
-    color: white;
-}
+.jumbotron {
+    min-height: 548px;
+    background: #272727;
+    background-image: url('../../../../assets/headerNumber.png');
+    margin-bottom: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -160px;
+  }
+  .img-thumbnail {
+    border: none;
+    width: 50%;
+    background-color: inherit;
+  }
+  .container {
+    background-color: transparent;
+    display: inline-block;
+    width: fit-content;
+  }
+  p {
+    color: gold;
+  }
+  h1, h2 {
+    color: gold;
+  }
+  #video_mask {
+    
+    width: 100%;
+    height: 551px;
+    background: #272737;
+    opacity: 0.5;
+    position: absolute;
+  }
