@@ -6,11 +6,29 @@ import { HttpService} from './../../../.././services/http.service';
   templateUrl: './portfolio.component.html',
   styleUrls: ['./portfolio.component.css'],
   template: `
-<div (click)=redirect(project.title) class="card card-block"
-     *ngFor="let project of projectInfo" [ngStyle]="{'background-image': getUrl(project.title)}">
-      <h4 class="card-title"></h4>
-      <p class="card-text"></p>
-</div>
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Special title treatment</h5>
+      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+
+  <div class="card text-center" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Special title treatment</h5>
+      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+
+  <div class="card text-right" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Special title treatment</h5>
+      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
   `
 })
 export class PortfolioComponent implements OnInit {
@@ -46,3 +64,8 @@ export class PortfolioComponent implements OnInit {
     }
   }
 }
+// <div (click)=redirect(project.title) class="card card-block"
+//      *ngFor="let project of projectInfo" [ngStyle]="{'background-image': getUrl(project.title)}">
+//       <h4 class="card-title"></h4>
+//       <p class="card-text"></p>
+// </div>
