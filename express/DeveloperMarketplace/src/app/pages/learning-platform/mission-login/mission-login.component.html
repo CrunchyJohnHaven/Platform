@@ -1,104 +1,89 @@
+<div class='jumbotron jumbotron-fluid bg-secondary'>
+  <h3>
+    Begin your mission
+  </h3>
+  <hr class='my-4'>
+  <div class="card col-md-4">
+    <form name="userform" method="post" #formCtrl="ngForm">
+      <h3 align="center">Login Form</h3>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" [(ngModel)]="user.email" name="email" placeholder="Email" required>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" [(ngModel)]="user.password" name="password" placeholder="Password" required>
+      </div>
+      <div class="form-group">
+          <button type="buton" class="btn btn-primary btn-block" style="margin-bottom: 20px" (click)="signInWithEmail()" [disabled]="formCtrl.form.invalid">
+            Login with Email
+          </button>
+      </div>
+      <div class="form-group">
+          <button type="buton" class="btn btn-block" (click)="signInWithFacebook()">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            Login with Facebook
+          </button>
 
+          <button type="button" class="btn btn-block" (click)="signInWithTwitter()">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            Login with Twitter
+          </button>
 
-<div class="begin-mission-container">
-  <div class="mission-header-container">
-    <div class="mission-icon-container"></div>
-    <h3>Begin your mission</h3> 
+          <button type="button" class="btn btn-block" (click)="signInWithGithub()">
+            <i class="fa fa-github" aria-hidden="true"></i>
+            Login with Github
+          </button>
+
+          <button type="button" class="btn btn-block" (click)="signInWithGoogle()">
+            <i class="fa fa-google" aria-hidden="true"></i>
+            Login with Google
+          </button>
+      </div>
+    </form>
   </div>
-    <div class="card col-lg-4">
-      <div class="row">
-          <div class="card col-md-4">
-                  <form name="userform" method="post" #formCtrl="ngForm">
-                    <h3 align="center">Login Form</h3>
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Email address</label>
-                      <input type="email" class="form-control" [(ngModel)]="user.email" name="email" placeholder="Email" required>
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputPassword1">Password</label>
-                      <input type="password" class="form-control" [(ngModel)]="user.password" name="password" placeholder="Password" required>
-                    </div>
 
-                    <div class="form-group">
-                        <button type="buton" class="btn btn-primary btn-block" style="margin-bottom: 20px" (click)="signInWithEmail()" [disabled]="formCtrl.form.invalid">
-                          Login with Email
-                        </button>
-                    </div>
-                    <div class="form-group">
-                        <button type="buton" class="btn btn-block" (click)="signInWithFacebook()">
-                          <i class="fa fa-facebook" aria-hidden="true"></i>
-                          Login with Facebook
-                        </button>
-
-                        <button type="button" class="btn btn-block" (click)="signInWithTwitter()">
-                          <i class="fa fa-twitter" aria-hidden="true"></i>
-                          Login with Twitter
-                        </button>
-
-                        <button type="button" class="btn btn-block" (click)="signInWithGithub()">
-                          <i class="fa fa-github" aria-hidden="true"></i>
-                          Login with Github
-                        </button>
-
-                        <button type="button" class="btn btn-block" (click)="signInWithGoogle()">
-                          <i class="fa fa-google" aria-hidden="true"></i>
-                          Login with Google
-                        </button>
-                    </div>
-                  </form>
-              </div>
+  <div class="row">
+    <div class="card col-md-4">
+      <form name="userform" method="post" #formCtrl="ngForm">
+        <h3 align="center">Registration Form</h3>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" [(ngModel)]="user.email" name="email" placeholder="Email" required>
           </div>
-              <div class="row">
-                  <div class="card col-md-4">
-                          <form name="userform" method="post" #formCtrl="ngForm">
-                            <h3 align="center">Registration Form</h3>
-                            <div class="form-group">
-                              <label for="exampleInputEmail1">Email address</label>
-                              <input type="email" class="form-control" [(ngModel)]="user.email" name="email" placeholder="Email" required>
-                            </div>
-                            <div class="form-group">
-                              <label for="exampleInputPassword1">Password</label>
-                              <input type="password" class="form-control" [(ngModel)]="user.password" name="password" placeholder="Password" required>
-                            </div>
-        
-                            <div class="form-group">
-                                <button type="buton" class="btn btn-primary btn-block" style="margin-bottom: 20px" (click)="signInWithEmail()" [disabled]="formCtrl.form.invalid">
-                                  Login with Email
-                                </button>
-                            </div>
-                            <div class="form-group">
-                                <button type="buton" class="btn btn-block" (click)="signInWithFacebook()">
-                                  <i class="fa fa-facebook" aria-hidden="true"></i>
-                                  Login with Facebook
-                                </button>
-        
-                                <button type="button" class="btn btn-block" (click)="signInWithTwitter()">
-                                  <i class="fa fa-twitter" aria-hidden="true"></i>
-                                  Login with Twitter
-                                </button>
-        
-                                <button type="button" class="btn btn-block" (click)="signInWithGithub()">
-                                  <i class="fa fa-github" aria-hidden="true"></i>
-                                  Login with Github
-                                </button>
-        
-                                <button type="button" class="btn btn-block" (click)="signInWithGoogle()">
-                                  <i class="fa fa-google" aria-hidden="true"></i>
-                                  Login with Google
-                                </button>
-                            </div>
-                          </form>
-                      </div>
-             </div>
-
-
-          <!-- End of login-container -->
-          <div class="reg-container">
-
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" [(ngModel)]="user.password" name="password" placeholder="Password" required>
           </div>
-        </div>
-        <!-- End of login + reg container -->
+
+          <div class="form-group">
+              <button type="buton" class="btn btn-primary btn-block" style="margin-bottom: 20px" (click)="signInWithEmail()" [disabled]="formCtrl.form.invalid">
+                Login with Email
+              </button>
+          </div>
+
+          <div class="form-group">
+              <button type="buton" class="btn btn-block" (click)="signInWithFacebook()">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                Login with Facebook
+              </button>
+
+              <button type="button" class="btn btn-block" (click)="signInWithTwitter()">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                Login with Twitter
+              </button>
+
+              <button type="button" class="btn btn-block" (click)="signInWithGithub()">
+                <i class="fa fa-github" aria-hidden="true"></i>
+                Login with Github
+              </button>
+
+              <button type="button" class="btn btn-block" (click)="signInWithGoogle()">
+                <i class="fa fa-google" aria-hidden="true"></i>
+                Login with Google
+              </button>
+          </div>
+      </form>
+    </div>
   </div>
-  <!-- End of begin-mission container -->
-
-
+</div>
