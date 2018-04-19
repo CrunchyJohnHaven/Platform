@@ -16,7 +16,7 @@
     text-align: right;
     top: 0vw;
     display: -webkit-box;
-    z-index: 9999;
+    z-index: 20;
     width: 100%;
 }
 .row {
@@ -32,6 +32,11 @@
     background-repeat: no-repeat;
     background-position-y: -69px;
 }
+
+img {
+    z-index: 100;
+}
+
 .row h2 {
     margin-top: 19%;
 }
