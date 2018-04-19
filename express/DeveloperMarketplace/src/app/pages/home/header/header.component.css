@@ -1,11 +1,23 @@
+.jumbotron {
+  min-height: 548px;
+  background-image: url(../../../../assets/GearFlagB.jpg);
+}
+.container {
+  background-color: transparent;
+}
+p {
+  color: gold;
+}
+h1 {
+  color: gold;
+}
 
-.header_block {
+/* .header_block {
   background: #272733;
   display: block;
   margin: 18px 0px 0px;
   width: 100%;
 }
-
 .splash_image_block {
   -webkit-background-size: 100% 764px !important;
   -moz-background-size: 100% 764px !important;
@@ -48,7 +60,6 @@ img {
   width: 100%;
   vertical-align: middle;
 }
-
 #splash_link {
   padding: 0px 0px 0px 40px !important;
   position: relative;
@@ -66,7 +77,6 @@ margin-top: 0px;
     margin-top: -85.0784px;
     top: 0px;
 }
-
 .radial {
   position: absolute;
   height: inherit;
@@ -82,7 +92,6 @@ margin-top: 0px;
   animation-timing-function: linear;
   transform: rotate(-40deg);
 }
-
 #radial_ring_code {
 background-image: url(https://cdn2.codingdojo.com/images/home/radial_ringcode.png) !important;
 animation: animate_ring_code 35s infinite, fade_in 1s;
@@ -241,10 +250,6 @@ video {
 .center {
   text-align: center;
 }
-
-
-
-/* HOVER BOX */
 .box {
   margin: 50px auto;
   background: #5FCF80;
@@ -261,4 +266,4 @@ video {
 }
 .rotate:hover {
   transition: all 1s ease-in-out;
-}
+} */
